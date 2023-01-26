@@ -1,0 +1,270 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.btnQrRes:hover{
+    background-color: #3C9E48 ;
+    color: #FFFFFF;
+}
+
+
+@media screen and (max-width:768px) {
+    .CounterRes {
+        flex-direction: column-reverse;
+    }
+
+    .stopres {
+        font-size: 25px;
+    }
+
+    .preventres {
+        font-size: 25px;
+    }
+
+    .QRres {
+        font-size: 15px;
+    }
+
+    .scanres {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    .CounterRes {
+        flex-direction: column-reverse;
+    }
+
+    .stopres {
+        text-align: center;
+        margin-bottom: 10px
+    }
+
+    .preventres {
+        text-align: center;
+        margin-bottom: 10px
+    }
+
+    .QRres {
+        text-align: center;
+    }
+
+    .btnQrRes {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+/* ######################### Authenrication ############################ */
+@media screen and (max-width:768px) {
+    .authres {
+        flex-direction: column;
+    }
+
+    .authimgres {
+        width: 450px;
+    }
+
+    .mobauthres {
+        font-size: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:575px) {
+    .authres {
+        flex-direction: column;
+    }
+
+    .authimgres {
+        width: 250px;
+    }
+
+    .mobauthres {
+        font-size: 20px;
+    }
+
+    .authparares {
+        font-size: 14px;
+    }
+}
+
+.hrborder {
+    border: 1px solid #008BBF;
+}
+
+
+/* ############################# Pricing ############################## */
+
+
+@media screen and (max-width:768px) {
+    .priceres {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .numres {
+        font-size: 50px;
+    }
+
+    .dollarSign {
+        font-size: 30px;
+        padding-left: 13px;
+    }
+
+}
+
+
+@media screen and (max-width:575px) {
+    .priceres {
+        font-size: 20px;
+    }
+
+    .priceparares {
+        font-size: 14px;
+    }
+
+    .numres {
+        font-size: 40px;
+    }
+
+    .dollarSign {
+        font-size: 25px;
+        padding-left: 38px;
+    }
+
+}
+
+.borderRound {
+    border: 1px solid #0F7CC0;
+}
+
+.bggradient {
+    background: radial-gradient(115.09% 115.09% at 85.22% 10.26%, #0F7CC0 32.02%, rgba(29, 140, 185, 0.861444) 58.01%, rgba(0, 92, 149, 0) 100%)
+        /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */
+    ;
+
+}
+
+.change_color {
+    background: radial-gradient(115.09% 115.09% at 85.22% 10.26%, #0F7CC0 32.02%, rgba(29, 140, 185, 0.861444) 58.01%, rgba(0, 92, 149, 0) 100%);
+    filter: drop-shadow(10px 10px 20px rgba(0, 139, 191, 0.3));
+}
+
+.change_color .basic {
+    color: white !important;
+}
+
+.change_color .basicbtn {
+    background-color: white !important;
+    color: #0F7CC0 !important;
+}
+
+
+/* ####################### Product ########################### */
+
+
+@media screen and (max-width:768px) {
+    .proheadres {
+        font-size: 30px;
+    }
+
+    .proparares {
+        font-size: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:575px) {
+    .proheadres {
+        font-size: 25px;
+    }
+
+    .proparares {
+        font-size: 25px;
+    }
+
+    .probuttonn {
+        font-size: 14px;
+        padding: 14px;
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
+
+/* ############################# Hover effects ################################ */
+
+.probutton:hover{
+    color: #FFFFFF;
+    background-color: #3C9E48;
+}
+
+
+
+.contactbtn:hover{
+    color: #FFFFFF;
+    background-color: #3C9E48;
+}
+
+.quickhov:hover{
+    color: #3C9E48;
+}
+
+.arrowhide{
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-appearance: none;
+}
+
+.drophover{
+    border:  0.5px solid #008BBF;
+    box-shadow: 0px 2px 5px rgba(29, 140, 185, 0.861444)
+}
+
+
+/* ########################### Code ############################### */
+
+
+@media screen and (max-width:768px) {
+  .coderes{
+    font-size: 30px;
+  }
+  .labelres{
+    font-size: 22px ;
+  }
+  .trustres{
+    font-size: 30px;
+}
+
+}
+
+
+@media screen and (max-width:575px) {
+    .coderes{
+        font-size: 25px ;
+    }
+    .labelres{
+        font-size: 18px ;
+    }
+    .trustres{
+        font-size: 25px;
+    }
+}
