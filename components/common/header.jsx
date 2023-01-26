@@ -1,12 +1,20 @@
 import React, { useState } from 'react'
 import Link from "next/link";
+import Modal from '../Contact/modal';
 
 
 function Header() {
 
   const [navbar, setNavbar] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [error, setError] = useState({});
 
-  const [show , setShow] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleModalClick = () => {
+    setShowModal(true)
+    setError({ email: "", phone: "" })
+  }
 
   return (
     <nav className="w-full fixed bg-[#E0F3FF] bg-cover bg-no-repeat  z-10">
@@ -62,23 +70,23 @@ function Header() {
             <div className=' gap-10 md:flex'>
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
                 <li className="font-medium text-[14px] text-[#1FA5DE]">
-                  <Link href="#">Technology</Link>
+                  <Link href="/technology">Technology</Link>
                 </li>
 
                 <li className="font-medium text-[12px] text-[#1FA5DE]">
                   {/* <Link href="#">Use Cases </Link> */}
                   <button id="dropdownHelperButton" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} data-dropdown-toggle="dropdownHelper" className="font-medium text-[14px] py-2.5 text-center inline-flex items-center " type="button">Use Cases </button>
-                  <div id="dropdownHelper" onMouseEnter={() => setShow(true)}  onMouseLeave={() => setShow(false)} className={`z-10 absolute  bg-[#F5FBFF] rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600 ${show ? "" : "hidden"}`}>
+                  <div id="dropdownHelper" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} className={`z-10 absolute  bg-[#F5FBFF] rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600 ${show ? "" : "hidden"}`}>
                     <ul className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperButton">
                       <li className='cursor-pointer'>
-                      <Link href="/brand"><div className="flex  items-center p-2 rounded  cursor-pointer">
+                        <Link href="/brand"><div className="flex  items-center p-2 rounded  cursor-pointer">
                           <div className='w-[27px]'>
                             <img src="/images/brand.png" alt="" />
                           </div>
 
                           <div className="ml-2 text-sm cursor-pointer">
                             <label for="helper-checkbox-1" className="font-medium text-gray-900 dark:text-gray-300 cursor-pointer">
-                             <div className='text-[13px] font-normal pb-1'>Brand Protection</div>
+                              <div className='text-[13px] font-normal pb-1'>Brand Protection</div>
                               <p id="helper-checkbox-text-1" className="text-[9px] font-normal">Read Our Secure Policies.</p>
                             </label>
                           </div>
@@ -86,14 +94,14 @@ function Header() {
                         <hr className='drophover' />
                       </li>
                       <li className='cursor-pointer'>
-                      <Link href="/label"><div className="flex items-center p-2 rounded   cursor-pointer">
+                        <Link href="/label"><div className="flex items-center p-2 rounded   cursor-pointer">
                           <div className='w-[27px]'>
                             <img src="/images/key.png" alt="" />
                           </div>
 
                           <div className="ml-2 text-sm cursor-pointer">
                             <label for="helper-checkbox-2" className="font-medium text-gray-900 dark:text-gray-300 cursor-pointer">
-                             <div className='text-[13px] font-normal pb-1'>Label As A Key</div>
+                              <div className='text-[13px] font-normal pb-1'>Label As A Key</div>
                               <p id="helper-checkbox-text-2" className=" text-[9px] font-normal ">Enrich With Digital Features.</p>
                             </label>
                           </div>
@@ -101,14 +109,14 @@ function Header() {
                         <hr className='drophover' />
                       </li>
                       <li className='cursor-pointer'>
-                      <Link href="/license"><div className="flex items-center p-2 rounded  cursor-pointer">
+                        <Link href="/license"><div className="flex items-center p-2 rounded  cursor-pointer">
                           <div className='w-[33px]'>
                             <img src="/images/license.png" alt="" />
                           </div>
 
                           <div className="ml-2 text-sm cursor-pointer">
                             <label for="helper-checkbox-3" className="font-medium text-gray-900 dark:text-gray-300 cursor-pointer">
-                           <div className='text-[13px] font-normal pb-1'>License And Tax Compliance</div>
+                              <div className='text-[13px] font-normal pb-1'>License And Tax Compliance</div>
                               <p id="helper-checkbox-text-3" className="text-[9px] font-normal">Get The Secure Bridge For Your Product.</p>
                             </label>
                           </div>
@@ -118,17 +126,18 @@ function Header() {
                   </div>
                 </li>
                 <li className="font-medium text-[14px] text-[#1FA5DE]">
-                  <Link href="#">Markets</Link>
+                  <Link href="/markets">Markets</Link>
                 </li>
                 {/* <li className="font-medium text-[14px] text-[#1FA5DE]">
                   <Link href="#">Join Our Team</Link>
                 </li> */}
               </ul>
-              <button className='text-[12px] mt-[20px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button>
+              <button onClick={handleModalClick} className='text-[12px] mt-[20px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button>
             </div>
           </div>
         </div>
       </div>
+      <Modal show={showModal} setShow={setShowModal} error={error} setError={setError} handleModalClick={handleModalClick} />
     </nav>
   );
 }
