@@ -57,7 +57,7 @@ function Pricing() {
                             </div>
                         </div>
                         <div onClick={() => setSelectBox("two")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px] relative  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "two" ? "change_color" : ""}`}>
-                            <button className='text-[#FFFFFF] p-[8px] absolute right-0 top-0 bestoff'>BEST OFFER</button>
+                            <button className='text-[#FFFFFF] p-[8px] absolute right-0 top-0 font-bold bestoff'>BEST OFFER</button>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Standard</p>
 
                             <div className='text-center font-bold text-[70px] w-fit m-auto relative text-[#0F7CC0] pb-[20px] basic numres'><p className='  text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>45 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
