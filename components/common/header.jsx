@@ -120,9 +120,9 @@ function Header() {
                 <li className="font-medium text-[14px] text-[#1FA5DE]">
                   <Link href="#">Markets</Link>
                 </li>
-                <li className="font-medium text-[14px] text-[#1FA5DE]">
+                {/* <li className="font-medium text-[14px] text-[#1FA5DE]">
                   <Link href="#">Join Our Team</Link>
-                </li>
+                </li> */}
               </ul>
               <button className='text-[12px] mt-[20px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button>
             </div>
