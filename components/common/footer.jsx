@@ -19,7 +19,7 @@ function Footer() {
                 </div>
 
                 <div>
-                  <div className='pb-[85px]'>
+                  <div className='h-[180px]'>
                     <div>
                       <h1 className='text-[#3C9E48] font-bold text-[20px]'>Quick Links</h1>
                     </div>
@@ -44,7 +44,7 @@ function Footer() {
                 </div>
 
                 <div>
-                  <div className='pb-[43px]'>
+                  <div className='h-[180px]'>
                     <div>
                       <h1 className='text-[#3C9E48] font-bold text-[20px]'>Location</h1>
                     </div>

@@ -4,6 +4,7 @@ function Pricing() {
 
     const [selectBox, setSelectBox] = useState("one");
     const [checked, setChecked] = useState(false)
+
     return (
         <div>
             <div className='container px-[15px]'>
@@ -22,7 +23,7 @@ function Pricing() {
                     </div>
                 </div>
                 <div>
-                    <div className='grid gap-[60px] grid-cols-1 lg:grid-cols-3  md:grid-cols-2'>
+                    {!checked && <div className='grid gap-[60px] grid-cols-1 lg:grid-cols-3  md:grid-cols-2'>
                         <div onClick={() => setSelectBox("one")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "one" ? "change_color" : ""}`}>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Basic</p>
                             <div className='text-center w-fit m-auto font-bold text-[70px] relative text-[#0F7CC0] pb-[20px] basic numres'><p className=' text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>25 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
@@ -171,9 +172,157 @@ function Pricing() {
 
 
                         </div>
+                    </div>}
+                    {checked && <div className='grid gap-[60px] grid-cols-1 lg:grid-cols-3  md:grid-cols-2'>
+                        <div onClick={() => setSelectBox("one")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "one" ? "change_color" : ""}`}>
+                            <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Basic</p>
+                            <div className='text-center w-fit m-auto font-bold text-[70px] relative text-[#0F7CC0] pb-[20px] basic numres'><p className=' text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>150 <span className='basic text-[20px] text-[#0F7CC0]'>/Yearly</span></div>
+                            <div className='h-[250px]'>
+                                <div className='flex gap-4 items-center pb-2'>
+                                    <div>
+                                        {selectBox === "one" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='basic text-[14px] font-semibold text-[#0F7CC0]'>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 items-center pb-2'>
+                                    <div>
+                                        {selectBox === "one" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='basic text-[14px] font-semibold text-[#0F7CC0]'>Lorem ipsum dolor sit</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 items-center'>
+                                    <div>
+                                        {selectBox === "one" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='basic text-[14px] font-semibold text-[#0F7CC0]'>Lorem ipsum sit</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='pb-10 flex justify-center m-auto'>
+                                <button className='basicbtn bg-[#0F7CC0] text-[#FFFFFF] rounded-[10px] font-bold text-[22px] w-[260px] p-[10px] cursor-pointer' style={{ "box-shadow": " 0px 6px 10px rgba(0, 0, 0, 0.25)" }}>CHOOSE PLAN</button>
+                            </div>
+                        </div>
+                        <div onClick={() => setSelectBox("two")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px] relative  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "two" ? "change_color" : ""}`}>
+                            <button className='text-[#FFFFFF] p-[8px] absolute right-0 top-0 font-bold bestoff'>BEST OFFER</button>
+                            <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Standard</p>
+
+                            <div className='text-center font-bold text-[70px] w-fit m-auto relative text-[#0F7CC0] pb-[20px] basic numres'><p className='  text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>250 <span className='basic text-[20px] text-[#0F7CC0]'>/Yearly</span></div>
+                            <div className='h-[250px]'>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "two" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "two" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum dolor sit</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "two" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum sit</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "two" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 items-center'>
+                                    <div>
+                                        {selectBox === "two" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='pb-10 flex justify-center m-auto'>
+                                <button className=' basicbtn bg-[#0F7CC0] text-[#FFFFFF] rounded-[10px] font-bold text-[22px] w-[260px] p-[10px] cursor-pointer' style={{ "box-shadow": " 0px 6px 10px rgba(0, 0, 0, 0.25)" }}>CHOOSE PLAN</button>
+                            </div>
+
+                        </div>
+                        <div onClick={() => setSelectBox("three")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "three" ? "change_color" : ""}`}>
+                            <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Premium</p>
+
+                            <div className='text-center font-bold text-[70px] w-fit m-auto relative text-[#0F7CC0] pb-[20px] basic numres'><p className='  text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>350 <span className='basic text-[20px] text-[#0F7CC0]'>/Yearly</span></div>
+                            <div className='h-[250px]'>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "three" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "three" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum dolor sit</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "three" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum sit</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "three" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 pb-2 items-center'>
+                                    <div>
+                                        {selectBox === "three" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum dolor sit amet, consectetur</p>
+                                    </div>
+                                </div>
+                                <div className='flex gap-4 items-center'>
+                                    <div>
+                                        {selectBox === "three" ? <img className='w-4' src="/images/Tick2.png" alt="" /> : <img className='w-4' src="/images/Tick.png" alt="" />}
+                                    </div>
+                                    <div>
+                                        <p className='text-[14px] font-semibold text-[#0F7CC0] basic'>Lorem ipsum sit</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className='pb-10 flex justify-center m-auto'>
+                                <button className=' basicbtn bg-[#0F7CC0] text-[#FFFFFF] rounded-[10px] text-[22px] font-bold w-[260px] p-[10px] cursor-pointer' style={{ "box-shadow": " 0px 6px 10px rgba(0, 0, 0, 0.25)" }}>CHOOSE PLAN</button>
+                            </div>
 
 
-                    </div>
+
+                        </div>
+                    </div>}
                 </div>
             </div>
             <hr className='mt-14 hrborder' />
