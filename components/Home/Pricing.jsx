@@ -6,7 +6,7 @@ function Pricing() {
     const [checked, setChecked] = useState(false)
     return (
         <div>
-            <div className='container'>
+            <div className='container px-[15px]'>
                 <div>
                     <h1 className='capitalize text-[#0F7CC0] text-[35px] font-bold text-center mt-20 priceres'>Get Started now, Pick the pricing plan for your product</h1>
                     <p className='text-[16px] text-center mt-5 priceparares'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco nt mollit anim id est laborum."</p>
@@ -22,7 +22,7 @@ function Pricing() {
                     </div>
                 </div>
                 <div>
-                    <div className='grid gap-[25px] grid-cols-1 lg:grid-cols-3  md:grid-cols-2'>
+                    <div className='grid gap-[60px] grid-cols-1 lg:grid-cols-3  md:grid-cols-2'>
                         <div onClick={() => setSelectBox("one")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "one" ? "change_color" : ""}`}>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Basic</p>
                             <div className='text-center w-fit m-auto font-bold text-[70px] relative text-[#0F7CC0] pb-[20px] basic numres'><p className=' text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>25 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
@@ -56,7 +56,8 @@ function Pricing() {
                                 <button className='basicbtn bg-[#0F7CC0] text-[#FFFFFF] rounded-[10px] font-bold text-[22px] w-[260px] p-[10px] cursor-pointer' style={{ "box-shadow": " 0px 6px 10px rgba(0, 0, 0, 0.25)" }}>CHOOSE PLAN</button>
                             </div>
                         </div>
-                        <div onClick={() => setSelectBox("two")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "two" ? "change_color" : ""}`}>
+                        <div onClick={() => setSelectBox("two")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px] relative  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "two" ? "change_color" : ""}`}>
+                            <button className='text-[#FFFFFF] p-[8px] absolute right-0 top-0 bestoff'>BEST OFFER</button>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Standard</p>
 
                             <div className='text-center font-bold text-[70px] w-fit m-auto relative text-[#0F7CC0] pb-[20px] basic numres'><p className='  text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>45 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>

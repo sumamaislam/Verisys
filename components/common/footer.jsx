@@ -12,7 +12,7 @@ function Footer() {
 
                 <div>
                   <div>
-                    <img className='' src="/images/Verisyslogo.png" alt="" />
+                    <Link href='/'><img className='' src="/images/Verisyslogo.png" alt="" /></Link>
                   </div>
                   <p className='text-[18px] font-normal pt-[15px] pb-[15px]'>Verisys QR Code Generator lets you to create memorable marketing campaigns with trackable QR Codes with the authentication of products designed by you.</p>
                   <a className='text-[#008BBF] font-normal text-[17px]' href="mailto: support@verisys.us">support@verisys.us</a>
