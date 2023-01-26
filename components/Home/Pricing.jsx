@@ -25,7 +25,7 @@ function Pricing() {
                     <div className='grid gap-[25px] grid-cols-1 lg:grid-cols-3  md:grid-cols-2'>
                         <div onClick={() => setSelectBox("one")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "one" ? "change_color" : ""}`}>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Basic</p>
-                            <div className='text-center font-bold text-[70px] relative text-[#0F7CC0] pb-[20px] basic numres'><p className=' left-[8%] text-[40px] text-[#0F7CC0] absolute font-bold basic dollarSign'>$</p>25 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
+                            <div className='text-center w-fit m-auto font-bold text-[70px] relative text-[#0F7CC0] pb-[20px] basic numres'><p className=' text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>25 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
                             <div className='h-[250px]'>
                                 <div className='flex gap-4 items-center pb-2'>
                                     <div>
@@ -59,7 +59,7 @@ function Pricing() {
                         <div onClick={() => setSelectBox("two")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "two" ? "change_color" : ""}`}>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Standard</p>
 
-                            <div className='text-center font-bold text-[70px] relative text-[#0F7CC0] pb-[20px] basic numres'><p className=' left-[8%] text-[40px] text-[#0F7CC0] absolute font-bold basic dollarSign'>$</p>45 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
+                            <div className='text-center font-bold text-[70px] w-fit m-auto relative text-[#0F7CC0] pb-[20px] basic numres'><p className='  text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>45 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
                             <div className='h-[250px]'>
                                 <div className='flex gap-4 pb-2 items-center'>
                                     <div>
@@ -111,7 +111,7 @@ function Pricing() {
                         <div onClick={() => setSelectBox("three")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "three" ? "change_color" : ""}`}>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Premium</p>
 
-                            <div className='text-center font-bold text-[70px] relative text-[#0F7CC0] pb-[20px] basic numres'><p className=' left-[8%] text-[40px] text-[#0F7CC0] absolute font-bold basic dollarSign'>$</p>57 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
+                            <div className='text-center font-bold text-[70px] w-fit m-auto relative text-[#0F7CC0] pb-[20px] basic numres'><p className='  text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>57 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
                             <div className='h-[250px]'>
                                 <div className='flex gap-4 pb-2 items-center'>
                                     <div>

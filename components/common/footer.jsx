@@ -15,7 +15,7 @@ function Footer() {
                     <img className='' src="/images/Verisyslogo.png" alt="" />
                   </div>
                   <p className='text-[18px] font-normal pt-[15px] pb-[15px]'>Verisys QR Code Generator lets you to create memorable marketing campaigns with trackable QR Codes with the authentication of products designed by you.</p>
-                  <a className='text-[#008BBF] font-normal text-[17px]' target="_blank" href="support@verisys.us">support@verisys.us</a>
+                  <a className='text-[#008BBF] font-normal text-[17px]' href="mailto: support@verisys.us">support@verisys.us</a>
                 </div>
 
                 <div>

@@ -125,7 +125,8 @@
 
     .dollarSign {
         font-size: 30px;
-        padding-left: 13px;
+        left: -17%;
+       
     }
 
 }
@@ -146,9 +147,15 @@
 
     .dollarSign {
         font-size: 25px;
-        padding-left: 38px;
+     
     }
 
+}
+
+@media screen and (max-width:320px) {
+    .dollarSign {
+        font-size: 25px;
+    }
 }
 
 .borderRound {
