@@ -16,8 +16,8 @@ function Pricing() {
                     <div className='text-[25px] font-bold text-[#0F7CC0] items-center'>Monthly</div>
                     <div>
                         <div class="relative inline-flex items-center cursor-pointer">
-                            <input type="checkbox" checked={checked}  class="sr-only peer" />
-                            <div onClick={()=>setChecked(!checked)} class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                            <input type="checkbox" checked={checked} class="sr-only peer" />
+                            <div onClick={() => setChecked(!checked)} class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
                             <span class="ml-3 text-sm text-gray-900 dark:text-gray-300  font-medium">Yearly</span>
                         </div>
                     </div>
@@ -58,9 +58,9 @@ function Pricing() {
                             </div>
                         </div>
                         <div onClick={() => setSelectBox("two")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px] relative  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "two" ? "change_color" : ""}`}>
-                           <div> 
-                            <button onClick={() => setSelectBox("one")} className={`bg-[#0F7CC0] ${selectBox === "one" ? "change_color" : ""}`} className='text-[#FFFFFF] p-[8px] absolute right-0 top-0 font-bold bestoff' >BEST OFFER</button>
-                            </div>
+
+                                <button onClick={() => setSelectBox("two")} className={` ${selectBox === "two" ? "selected_sale" : ""} text-[#FFFFFF] p-[8px] absolute right-0 top-0 font-bold bestoff`}>BEST OFFER</button>
+
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Standard</p>
 
                             <div className='text-center font-bold text-[70px] w-fit m-auto relative text-[#0F7CC0] pb-[20px] basic numres'><p className='  text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>45 <span className='basic text-[20px] text-[#0F7CC0]'>/Month</span></div>
@@ -175,6 +175,7 @@ function Pricing() {
 
                         </div>
                     </div>}
+
                     {checked && <div className='grid gap-[60px] grid-cols-1 lg:grid-cols-3  md:grid-cols-2'>
                         <div onClick={() => setSelectBox("one")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px]  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "one" ? "change_color" : ""}`}>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Basic</p>
@@ -210,7 +211,7 @@ function Pricing() {
                             </div>
                         </div>
                         <div onClick={() => setSelectBox("two")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px] relative  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "two" ? "change_color" : ""}`}>
-                            <button className='text-[#FFFFFF] p-[8px] absolute right-0 top-0 font-bold bestoff'>BEST OFFER</button>
+                        <button onClick={() => setSelectBox("two")} className={` ${selectBox === "two" ? "selected_sale" : ""} text-[#FFFFFF] p-[8px] absolute right-0 top-0 font-bold bestoff`}>BEST OFFER</button>
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Standard</p>
 
                             <div className='text-center font-bold text-[70px] w-fit m-auto relative text-[#0F7CC0] pb-[20px] basic numres'><p className='  text-[40px] text-[#0F7CC0] left-[-20%] absolute font-bold basic dollarSign'>$</p>250 <span className='basic text-[20px] text-[#0F7CC0]'>/Yearly</span></div>
