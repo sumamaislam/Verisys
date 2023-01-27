@@ -2,7 +2,7 @@ import React from "react";
 
 function Banner() {
   return (
-    <div className="pt-[83px]">
+    <div className="adjust_padding">
       <div className="container">
         <div className="flex justify-around items-center gap-4 CounterRes mb-24">
           <div>

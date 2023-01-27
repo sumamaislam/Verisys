@@ -2,7 +2,7 @@ import React from 'react'
 
 function TechnologyCom() {
   return (
-    <div>TechnologyCom</div>
+    <div className='adjust_padding'>TechnologyCom</div>
   )
 }
 

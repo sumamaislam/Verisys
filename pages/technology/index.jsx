@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import { Footer, Header } from '../../components/common'
+import TechnologyCom from '../../components/technology'
 
 function Technologi() {
   return (
@@ -16,6 +17,7 @@ function Technologi() {
     </Head>
     <main>
       <Header />
+      <TechnologyCom />
       <Footer />
     </main>
   </>

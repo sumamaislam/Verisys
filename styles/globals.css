@@ -247,7 +247,13 @@ body {
     background-color: #3C9E48;
 }
 
-
+.brandformbutton:hover{
+    color: #FFFFFF;
+    background-color: #3C9E48;
+}
+.adjust_padding {
+    padding-top: 83px;
+}
 
 .contactbtn:hover {
     color: #FFFFFF;
@@ -319,4 +325,112 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+
+/* ############################# Brand Protection ############################# */
+
+
+@media screen and (max-width: 575px) {
+    .brandprotection {
+        font-size: 25px;
+    }
+
+    .brandparres {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brandprotection {
+        font-size: 30Spx;
+    }
+}
+
+.sqaure {
+    position: absolute;
+    right: 40px;
+    height: 55rem;
+    margin-top: 224px
+}
+
+
+@media screen and (max-width: 575px) {
+    .protectbuild {
+        flex-direction: column-reverse;
+    }
+
+    .headingprotect{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .verisyss {
+        width: 220px;
+        margin-top: 26px;
+    }
+    .protectbtn{
+        padding: 18px;
+    }
+    .formres{
+        padding-left: 0;
+        width: 100%;
+    }
+    .formheading{
+        font-size: 23px;
+    }
+    .formreswidth{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .headingprotect {
+        font-size: 25px;
+    }
+    .protectbuild {
+        flex-direction: column-reverse;
+    }
+    .btnnofprotect{
+        display: flex;
+        justify-content: center;
+    }
+
+    .verisyss{
+        padding-top: 30px;
+    }
+
+    .formres{
+        padding-left: 0;
+        width: 100%;
+    }
+    .formheading{
+        font-size: 30px;
+    }
+    .formreswidth{
+        width: 100%;
+    }
+}
+
+
+/* @media screen and (max-width: 1024px) {
+    .formres{
+        padding-left: 0;
+        width: 100%;
+    }
+    .formheading{
+        font-size: 30px;
+    }
+    .formreswidth{
+        width: 100%;
+    }
+} */
+
+input{
+    outline: none;
+}
+textarea{
+    resize: none;
+    outline: none;
 }
