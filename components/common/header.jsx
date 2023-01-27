@@ -132,12 +132,12 @@ function Header() {
                   <Link href="#">Join Our Team</Link>
                 </li> */}
               </ul>
-              <button onClick={handleModalClick} className='text-[12px] mt-[20px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button>
+              <Link href='/contact'> <button className='text-[12px] mt-[20px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button></Link>
             </div>
           </div>
         </div>
       </div>
-      <Modal show={showModal} setShow={setShowModal} error={error} setError={setError} handleModalClick={handleModalClick} />
+      {/* <Modal show={showModal} setShow={setShowModal} error={error} setError={setError} handleModalClick={handleModalClick} /> */}
     </nav>
   );
 }

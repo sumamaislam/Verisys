@@ -59,9 +59,6 @@ const validate = (values) => {
     }
 }
 
-
-
-
   return (
     <>
       <Head>
