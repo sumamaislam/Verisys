@@ -446,6 +446,11 @@ body {
 input{
     outline: none;
 }
+
+select{
+    outline: none; 
+}
+
 textarea{
     resize: none;
     outline: none;

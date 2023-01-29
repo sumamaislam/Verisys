@@ -59,7 +59,7 @@ function Modal({ show, setShow, handleModalClick, setError, error }) {
                         {error.phone && <p className='text-left text-[red] text-[13px] m-[0px]'>{error.phone}</p>}
                     </div>
                     <div className='flex justify-center mt-[35px] mb-[12px]'>
-                        <button onClick={mainSubmit} className='w-[200px] text-[#FFFFFF] font-medium bg-[#008BBF] flex items-center justify-center h-[55px] rounded-[10px]' style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}>SUBMIT</button>
+                       <button onClick={mainSubmit} className='w-[200px] text-[#FFFFFF] font-medium bg-[#008BBF] flex items-center justify-center h-[55px] rounded-[10px]' style={{ boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)" }}>SUBMIT</button>
                     </div>
                 </div>
             </div>}
