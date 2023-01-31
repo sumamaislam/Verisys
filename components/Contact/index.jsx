@@ -61,14 +61,14 @@ function ContactUs() {
   return (
     <div>
       <div className='adjust_padding relative '>
-        <div className='containers'>
+        <div className='changed_it'>
           <div className='flex justify-between'>
-            <div className='flex flex-col h-[500px] justify-center contactparares '>
+            <div className='flex flex-col justify-center items-start w-[40%] contactparares '>
               <h1 className='text-[50px] font-bold text-[#0F7CC0] pb-[30px] md:text-center contactres'>Contact Us</h1>
               <p className='capitalize text-[22px] font-normal pb-[30px] contactpara'>Want to get in touch with our Customer Service team? Looking to learn more about our solutions? Have a press inquiry?</p>
               <p className='capitalize text-[22px] font-normal contactpara'>Speak to a member of our team by using the form below, or give us a call.</p>
             </div>
-            <div className='contactbannerrr mr-[-5%]'>
+            <div className='contactbannerrr'>
               <img className='' src="/images/contactbanner.png" alt="" />
             </div>
           </div>

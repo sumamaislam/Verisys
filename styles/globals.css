@@ -195,7 +195,7 @@ body {
     /* background: radial-gradient(77.14% 780.99% at 33.21% 43.18%, #0F7CC0 69.84%, rgba(15, 124, 192, 0) 95.3%);
     filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25)); */
     border-radius: 10px 10px 0px 10px;
-     background-color: #0F7CC0;
+    background-color: #0F7CC0;
 }
 
 .change_color .basic {
@@ -265,10 +265,11 @@ body {
     background-color: #3C9E48;
 }
 
-.brandformbutton:hover{
+.brandformbutton:hover {
     color: #FFFFFF;
     background-color: #3C9E48;
 }
+
 .adjust_padding {
     padding-top: 83px;
 }
@@ -293,7 +294,7 @@ body {
     /* box-shadow: 0px 2px 5px rgba(29, 140, 185, 0.861444) */
 }
 
-.borderhover{
+.borderhover {
     border-bottom: 1px solid #008BBF;
     /* box-shadow: 0px 2px 5px rgba(29, 140, 185, 0.861444); */
 }
@@ -379,13 +380,17 @@ body {
     margin-top: 224px
 }
 
+.changed_it {
+    /* width: 100% !important; */
+    margin-left: 5% !important;
+}
 
 @media screen and (max-width: 575px) {
     .protectbuild {
         flex-direction: column-reverse;
     }
 
-    .headingprotect{
+    .headingprotect {
         font-size: 20px;
         text-align: center;
     }
@@ -394,17 +399,21 @@ body {
         width: 220px;
         margin-top: 26px;
     }
-    .protectbtn{
+
+    .protectbtn {
         padding: 18px;
     }
-    .formres{
+
+    .formres {
         padding-left: 0;
         width: 100%;
     }
-    .formheading{
+
+    .formheading {
         font-size: 23px;
     }
-    .formreswidth{
+
+    .formreswidth {
         width: 100%;
     }
 }
@@ -413,26 +422,30 @@ body {
     .headingprotect {
         font-size: 25px;
     }
+
     .protectbuild {
         flex-direction: column-reverse;
     }
-    .btnnofprotect{
+
+    .btnnofprotect {
         display: flex;
         justify-content: center;
     }
 
-    .verisyss{
+    .verisyss {
         padding-top: 30px;
     }
 
-    .formres{
+    .formres {
         padding-left: 0;
         width: 100%;
     }
-    .formheading{
+
+    .formheading {
         font-size: 30px;
     }
-    .formreswidth{
+
+    .formreswidth {
         width: 100%;
     }
 }
@@ -451,7 +464,7 @@ body {
     }
 } */
 
-input{
+input {
     margin-top: 5px;
     outline: none;
     font-size: 15px !important;
@@ -459,7 +472,7 @@ input{
 }
 
 
-textarea{
+textarea {
     resize: none;
     outline: none;
     border-radius: 10px;
@@ -467,11 +480,10 @@ textarea{
 }
 
 select {
-    outline: none; 
+    outline: none;
     border-radius: 10px;
     font-size: 15px !important;
     margin-top: 5px;
-
     -webkit-appearance: none;
     cursor: pointer;
     -moz-appearance: none;
@@ -525,66 +537,73 @@ textarea:hover {
     .formhelp {
         flex-direction: column-reverse;
     }
-    .helpcontent{
+
+    .helpcontent {
         width: 100%;
     }
-    .formcontent{
+
+    .formcontent {
         width: 100%;
     }
 }
 
 
 @media screen and (max-width: 1024px) {
- .contactbanner{
-    width: 559px;
-    height: 764px;
- }
+    .contactbanner {
+        width: 559px;
+        height: 764px;
+    }
 }
+
 @media screen and (max-width: 912px) {
- .contactbanner{
-    width: 470px;
-    height: 745px;
- }
+    .contactbanner {
+        width: 470px;
+        height: 745px;
+    }
 }
-@media screen and (max-width: 820px) {
- .contactbanner{
-    width: 448px;
-    height: 737px;
- }
-}
-@media screen and (max-width: 768px) {
- .contactbanner{
-    width: 420px;
-    height: 725px;
- }
-}
-@media screen and (max-width: 767px) {
- .contactbannerrr{
-   display: none;
- }
- .contactres{
-    text-align: center;
- }
- .contactpara{
-    text-align: center;
- }
- .contactparares{
-    text-align: center;
- }
- .contactres{
-    display: flex;
-    justify-content: center;
 
- }
+@media screen and (max-width: 820px) {
+    .contactbanner {
+        width: 448px;
+        height: 737px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactbanner {
+        width: 420px;
+        height: 725px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contactbannerrr {
+        display: none;
+    }
+
+    .contactres {
+        text-align: center;
+    }
+
+    .contactpara {
+        text-align: center;
+    }
+
+    .contactparares {
+        text-align: center;
+    }
+
+    .contactres {
+        display: flex;
+        justify-content: center;
+
+    }
 
 }
 
 
 @media screen and (max-width: 1024px) {
- .contactbannerrr{
-   display: none;
- }
+    .contactbannerrr {
+        display: none;
+    }
 }
-
-
-
