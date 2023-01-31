@@ -1,9 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
+import Topbtn from './scrollToTop'
 
 function Footer() {
   return (
     <div>
+      <Topbtn />
       <div className=' bg-[#E0F3FF]  mt-[70px]'>
         <div className='containers'>
           <div className='flex'>
