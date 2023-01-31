@@ -72,7 +72,6 @@ function Header() {
                 <li className="font-medium text-[14px] text-[#1FA5DE]">
                   <Link href="/technology">Technology</Link>
                 </li>
-
                 <li className="font-medium text-[12px] text-[#1FA5DE]">
                   {/* <Link href="#">Use Cases </Link> */}
                   <button id="dropdownHelperButton" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} data-dropdown-toggle="dropdownHelper" className="font-medium text-[14px] py-2.5 text-center inline-flex items-center " type="button">Use Cases </button>
