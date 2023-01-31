@@ -60,31 +60,31 @@ function ContactUs() {
 
   return (
     <div>
-      <div className='adjust_padding relative h-[600px]'>
-        <div className='container'>
+      <div className='adjust_padding relative '>
+        <div className='containers'>
           <div className='flex justify-between'>
-            <div className='w-[50%] flex flex-col h-[600px] justify-center '>
-              <h1 className='text-[50px] font-bold text-[#0F7CC0] pb-[30px]'>Contact Us</h1>
-              <p className='capitalize text-[22px] font-normal pb-[30px]'>Want to get in touch with our Customer Service team? Looking to learn more about our solutions? Have a press inquiry?</p>
-              <p className='capitalize text-[22px] font-normal'>Speak to a member of our team by using the form below, or give us a call.</p>
+            <div className='flex flex-col h-[500px] justify-center contactparares '>
+              <h1 className='text-[50px] font-bold text-[#0F7CC0] pb-[30px] md:text-center contactres'>Contact Us</h1>
+              <p className='capitalize text-[22px] font-normal pb-[30px] contactpara'>Want to get in touch with our Customer Service team? Looking to learn more about our solutions? Have a press inquiry?</p>
+              <p className='capitalize text-[22px] font-normal contactpara'>Speak to a member of our team by using the form below, or give us a call.</p>
             </div>
-            <div>
-              <img className='absolute right-0 h-[100%] top-0' src="/images/contactbanner.png" alt="" />
+            <div className='contactbannerrr mr-[-5%]'>
+              <img className='' src="/images/contactbanner.png" alt="" />
             </div>
           </div>
         </div>
       </div>
 
-      <div className='container' >
-        <div className='flex justify-between gap-[70px] mt-[70px] items-center'>
-          <div className='bg-[#D8F3FE] rounded-[10px] w-[65%] hov-inpp'>
+      <div className='containers' >
+        <div className='flex justify-between gap-[70px] items-center formhelp'>
+          <div className='bg-[#D8F3FE] rounded-[10px] w-[65%] hov-inpp formcontent'>
             <form onSubmit={handleSubmit} >
               <div className="py-10 px-5">
 
                 <div className="grid grid-cols-2 gap-4">
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[12px] font-extrabold pb-[5px]'> First Name <span className='text-[#FF0000]'>*</span></label>
+                    <label className='text-[14px] font-bold mb-[7px]'> First Name <span className='text-[#FF0000]'>*</span></label>
                     <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='firstname' placeholder="Enter..."
                       value={formValues.firstname}
                       onChange={handleChange} />
@@ -92,7 +92,7 @@ function ContactUs() {
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[12px] font-extrabold pb-[5px]'> Last Name <span className='text-[#FF0000]'>*</span></label>
+                    <label className='text-[14px] font-bold mb-[7px]'> Last Name <span className='text-[#FF0000]'>*</span></label>
                     <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='lastname' placeholder="Enter..."
                       value={formValues.lastname}
                       onChange={handleChange} />
@@ -100,7 +100,7 @@ function ContactUs() {
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[12px] font-extrabold pb-[5px]'> E-Mail <span className='text-[#FF0000]'>*</span></label>
+                    <label className='text-[14px] font-bold mb-[7px]'> E-Mail <span className='text-[#FF0000]'>*</span></label>
                     <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='email' placeholder="Enter..."
                       value={formValues.email}
                       onChange={handleChange} />
@@ -108,15 +108,15 @@ function ContactUs() {
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[12px] font-extrabold pb-[5px]'>Name Of Organization <span className='text-[#FF0000]'>*</span></label>
+                    <label className='text-[14px] font-bold mb-[7px]'>Name Of Organization <span className='text-[#FF0000]'>*</span></label>
                     <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='organization' placeholder="Enter..."
                       value={formValues.organization}
                       onChange={handleChange} />
                     <pre>{formError.organization}</pre>
                   </div>
 
-                  <div>
-                    <label className='text-[12px] font-extrabold pb-[5px]'> Country <span className='text-[#FF0000]'>*</span></label>
+                  <div className='col-span-2 lg:col-span-1'>
+                    <label className='text-[14px] font-bold mb-[7px]'> Country <span className='text-[#FF0000]'>*</span></label>
                     <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name="">
                       <option hidden>Please Select</option>
                       <option>Us</option>
@@ -125,8 +125,8 @@ function ContactUs() {
                     </select>
                   </div>
 
-                  <div>
-                    <label className='text-[12px] font-extrabold pb-[5px]'> Reason Of Contact <span className='text-[#FF0000]'>*</span></label>
+                  <div className='col-span-2 lg:col-span-1'>
+                    <label className='text-[14px] font-bold mb-[7px]'> Reason Of Contact <span className='text-[#FF0000]'>*</span></label>
                     <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name="">
                       <option hidden>Please Select</option>
                       <option>Brand Protection</option>
@@ -146,6 +146,11 @@ function ContactUs() {
                     <pre>{formError.message}</pre>
                   </div>
 
+                  <div className="col-span-2 flex items-center">
+                    <input type="checkbox" />
+                    <label className='ml-2'>I agree with the Verisys's <a className='text-blue-600 dark:text-blue-500 hover:underline' href="#">Privacy Policy</a> and <a className='text-blue-600 dark:text-blue-500 hover:underline' href='#'>Terms Of Services</a></label>
+                  </div>
+
                   <div className="col-span-2 flex m-auto">
                     <button className="text-[25px] p-[8px] bg-[#0F7CC0] brandformbutton text-white font-bold py-[12px] px-[62px] rounded-[10px]">
                       Submit
@@ -156,8 +161,8 @@ function ContactUs() {
               </div>
             </form>
           </div>
-          <div className='w-[35%]'>
-            <h1 className='text-[#0F7CC0] text-[45px] font-bold pb-[45px]'>How Can We Help.?</h1>
+          <div className='w-[35%] helpcontent'>
+            <h1 className='text-[#0F7CC0] text-[45px] font-bold pb-[45px] helphead'>How Can We Help.?</h1>
             <p className='capitalize text-[25px] font-normal pb-[40px]'>Looking For The Brand Secure QR Code Website.? We <Link className='text-[#0F7CC0]' href="/">Verisys.us</Link> Is Always Here To Help You.</p>
             <p className='capitalize text-[25px] text-[#0F7CC0] font-semibold'>Fill the form and let us know how can we help.?</p>
           </div>
@@ -166,9 +171,9 @@ function ContactUs() {
 
       <div className='mt-[70px]'>
         <div className="bg-[url('/images/BgCode.png')] bg-cover pt-[55px] pb-[55px] ">
-          <div className='container'>
-          <h1 className='text-center text-[35px] text-[#FFFFFF] font-bold mt-[45px] mb-[55px]  trustres'>OTHER OPTIONS</h1>
-            <div className='grid gap-[25px] mt-[40px] lg:grid-cols-4  md:grid-cols-2 grid-cols-1'>
+          <div className='containers'>
+            <h1 className='text-center text-[35px] text-[#FFFFFF] font-bold mt-[45px] mb-[55px]  trustres'>OTHER OPTIONS</h1>
+            <div className='grid gap-[25px] mt-[40px] lg:grid-cols-4 px-14 md:grid-cols-2 grid-cols-1'>
               <div>
                 <div>
                   <img className='flex justify-center m-auto' src="/images/skypecont.png" alt="" />

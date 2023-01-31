@@ -3,7 +3,7 @@ import React from 'react'
 function Feature() {
     return (
         <div>
-            <div className='container'>
+            <div className='containers'>
                 <h1 className='text-center text-[35px] text-[#0F7CC0] font-bold mt-[100px] trustres pb-[40px]'>Why Should You Trust Us.?</h1>
                 <div className='grid gap-[25px] mt-[40px] lg:grid-cols-4  md:grid-cols-2 grid-cols-1'>
                     <div>

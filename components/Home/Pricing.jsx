@@ -7,7 +7,7 @@ function Pricing() {
 
     return (
         <div>
-            <div className='container px-[15px]'>
+            <div className='containers px-[15px]'>
                 <div>
                     <h1 className='capitalize text-[#0F7CC0] text-[35px] font-bold text-center mt-20 priceres'>Get Started now, Pick the pricing plan for your product</h1>
                     <p className='text-[16px] text-center mt-5 priceparares'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco nt mollit anim id est laborum."</p>

@@ -3,7 +3,7 @@ import React from "react";
 function Banner() {
   return (
     <div className="adjust_padding">
-      <div className="container">
+      <div className="containers">
         <div className="flex justify-around items-center gap-4 CounterRes mb-24">
           <div>
             <h1 className="text-[35px] font-bold text-[#0F7CC0] stopres">Stop Counterfeiting</h1>

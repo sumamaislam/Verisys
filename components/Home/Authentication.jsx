@@ -3,7 +3,7 @@ import React from 'react'
 function Authentication() {
     return (
         <div>
-            <div className='container'>
+            <div className='containers'>
                 <div>
                     <h1 className='text-[35px] font-bold text-[#0F7CC0] text-center mt-14 mobauthres'>Mobile Authentication Solution</h1>
                 </div>

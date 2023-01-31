@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div>
       <div className=' bg-[#E0F3FF]  mt-[70px]'>
-        <div className='container'>
+        <div className='containers'>
           <div className='flex'>
             <div className='pb-[27px] pt-[27px]'>
               <div className='grid gap-[35px] grid-cols-1 lg:grid-cols-4 md:grid-cols-3 mt-[40px]'>

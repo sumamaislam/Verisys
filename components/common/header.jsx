@@ -18,7 +18,7 @@ function Header() {
 
   return (
     <nav className="w-full fixed bg-[#E0F3FF] bg-cover bg-no-repeat  z-10">
-      <div className="justify-between md:items-center md:flex container" >
+      <div className="justify-between md:items-center md:flex containers" >
         <div>
           <div className="flex items-center justify-between py-[15px] md:block">
             <Link href="/">
@@ -78,22 +78,22 @@ function Header() {
                   <button id="dropdownHelperButton" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} data-dropdown-toggle="dropdownHelper" className="font-medium text-[14px] py-2.5 text-center inline-flex items-center " type="button">Use Cases </button>
                   <div id="dropdownHelper" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} className={`z-10 absolute  bg-[#F5FBFF] rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600 ${show ? "" : "hidden"}`}>
                     <ul className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperButton">
-                      <li className='cursor-pointer'>
+                      <li className='cursor-pointer borderhover'>
                         <Link href="/brand"><div className="flex  items-center p-2 rounded  cursor-pointer">
                           <div className='w-[27px]'>
                             <img src="/images/brand.png" alt="" />
                           </div>
 
                           <div className="ml-2 text-sm cursor-pointer">
-                            <label for="helper-checkbox-1" className="font-medium text-gray-900 dark:text-gray-300 cursor-pointer">
+                            <label for="helper-checkbox-1" className="font-medium text-gray-900 dark:text-gray-300 cursor-pointer ">
                               <div className='text-[13px] font-normal pb-1'>Brand Protection</div>
                               <p id="helper-checkbox-text-1" className="text-[9px] font-normal">Read Our Secure Policies.</p>
                             </label>
                           </div>
                         </div></Link>
-                        <hr className='drophover' />
+                        {/* <hr className='drophover' /> */}
                       </li>
-                      <li className='cursor-pointer'>
+                      <li className='cursor-pointer borderhover'>
                         <Link href="/label"><div className="flex items-center p-2 rounded   cursor-pointer">
                           <div className='w-[27px]'>
                             <img src="/images/key.png" alt="" />
@@ -106,7 +106,7 @@ function Header() {
                             </label>
                           </div>
                         </div></Link>
-                        <hr className='drophover' />
+                        {/* <hr className='drophover' /> */}
                       </li>
                       <li className='cursor-pointer'>
                         <Link href="/license"><div className="flex items-center p-2 rounded  cursor-pointer">

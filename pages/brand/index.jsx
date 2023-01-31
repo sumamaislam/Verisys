@@ -73,7 +73,7 @@ const validate = (values) => {
       <main>
         <Header />
         <div>
-          <div className='container'>
+          <div className='containers'>
             <h1 className='text-[35px] font-bold text-[#0F7CC0] adjust_padding text-center brandprotection'>Brand Protection</h1>
             <div className='mt-[20px]'>
               <img className='w-[940px] flex m-auto' src="/images/brandpage.png" alt="" />
@@ -84,7 +84,7 @@ const validate = (values) => {
             </div>
           </div>
           <div className="bg-[url('/images/Rectangle.png')] bg-cover mt-[70px]">
-            <div className='container'>
+            <div className='containers'>
               <div className='flex items-center justify-around protectbuild'>
 
                 <div>
@@ -103,7 +103,7 @@ const validate = (values) => {
           </div>
 
           <div className=' mt-[70px]'>
-            <div className='container relative'>
+            <div className='containers relative'>
               <div className='w-[85%] flex formreswidth'>
                 <div className='bg-[url("/images/samplebg.png")] '>
                   <div className='pl-[100px] w-[85%] formres'>

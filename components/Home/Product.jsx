@@ -3,7 +3,7 @@ import React from 'react'
 function Product() {
     return (
         <div>
-            <div className='container'>
+            <div className='containers'>
                 <div className="bg-[url('/images/probg.png')]  bg-cover bg-left md:bg-center pt-[45px]  mt-20 ">
                     <h1 className='text-center text-[#0F7CC0] text-[35px] font-bold proheadres'>We Protect Your Product From Stealing</h1>
                     <div>
