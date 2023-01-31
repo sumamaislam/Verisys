@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
 import { Footer, Header } from '../../components/common'
+import License from '../../components/license'
 
-function License() {
+function Licensees() {
   return (
     <>
       <Head>
@@ -16,10 +17,11 @@ function License() {
       </Head>
       <main>
         <Header />
+        <License />
         <Footer />
       </main>
     </>
   )
 }
 
-export default License
+export default Licensees

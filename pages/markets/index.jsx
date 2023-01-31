@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import { Footer, Header } from '../../components/common'
+import MarketCom from '../../components/markets'
 
 function Markets() {
   return (
@@ -16,6 +17,7 @@ function Markets() {
     </Head>
     <main>
       <Header />
+      <MarketCom />
       <Footer />
     </main>
   </>

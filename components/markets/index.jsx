@@ -2,7 +2,7 @@ import React from 'react'
 
 function MarketCom() {
   return (
-    <div>MarketCom</div>
+    <div className='adjust_padding'>MarketCom</div>
   )
 }
 
