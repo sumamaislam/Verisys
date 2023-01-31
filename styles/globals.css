@@ -472,16 +472,35 @@ select {
     background-repeat: no-repeat;
 }
 
+
+input {
+    border: 1px solid transparent !important;
+}
+
 input:hover {
     border: 1px solid #008BBF !important;
+}
+
+
+select {
+    border: 1px solid transparent !important;
 }
 
 select:hover {
     border: 1px solid #008BBF !important;
 }
 
+textarea {
+    border: 1px solid transparent !important;
+}
+
 textarea:hover {
     border: 1px solid #008BBF !important;
+}
+
+
+.hov-inpp {
+    border: 1px solid transparent !important;
 }
 
 .hov-inpp:hover {
