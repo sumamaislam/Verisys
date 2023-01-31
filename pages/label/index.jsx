@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
 import { Footer, Header } from '../../components/common'
+import Label from '../../components/label'
 
-function Label() {
+function Labels() {
   return (
     <>
     <Head>
@@ -16,10 +17,11 @@ function Label() {
     </Head>
     <main>
       <Header />
+      <Label />
       <Footer />
     </main>
   </>
   )
 }
 
-export default Label
+export default Labels

@@ -137,7 +137,7 @@ const validate = (values) => {
                           </div>
 
                           <div className="col-span-2 lg:col-span-1">
-                            <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name='organization' placeholder="Name of organization *" 
+                            <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name='organization' placeholder="Name of organization" 
                              value={formValues.organization}
                              onChange={handleChange}/>
                              <pre>{formError.organization}</pre>

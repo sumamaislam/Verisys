@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, { useState } from 'react'
 
 function ContactUs() {
@@ -76,47 +77,47 @@ function ContactUs() {
 
       <div className='container' >
         <div className='flex justify-between gap-[70px] mt-[70px] items-center'>
-          <div className='bg-[#D8F3FE] rounded-[10px] w-[65%]'>
+          <div className='bg-[#D8F3FE] rounded-[10px] w-[65%] hov-inpp'>
             <form onSubmit={handleSubmit} >
               <div className="py-10 px-5">
 
                 <div className="grid grid-cols-2 gap-4">
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[12px] font-extrabold pb-[5px]'> First Name</label>
-                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name='firstname' placeholder="First Name"
+                    <label className='text-[12px] font-extrabold pb-[5px]'> First Name <span className='text-[#FF0000]'>*</span></label>
+                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='firstname' placeholder="Enter..."
                       value={formValues.firstname}
                       onChange={handleChange} />
                     <pre>{formError.firstname}</pre>
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[12px] font-extrabold pb-[5px]'> Last Name</label>
-                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name='lastname' placeholder="Last Name"
+                    <label className='text-[12px] font-extrabold pb-[5px]'> Last Name <span className='text-[#FF0000]'>*</span></label>
+                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='lastname' placeholder="Enter..."
                       value={formValues.lastname}
                       onChange={handleChange} />
                     <pre>{formError.lastname}</pre>
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <labe className='text-[12px] font-extrabold pb-[5px]' l> E-Mail</labe>
-                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name='email' placeholder="E-mail"
+                    <label className='text-[12px] font-extrabold pb-[5px]'> E-Mail <span className='text-[#FF0000]'>*</span></label>
+                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='email' placeholder="Enter..."
                       value={formValues.email}
                       onChange={handleChange} />
                     <pre>{formError.email}</pre>
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[12px] font-extrabold pb-[5px]'>Name Of Organization</label>
-                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name='organization' placeholder="Name of organization *"
+                    <label className='text-[12px] font-extrabold pb-[5px]'>Name Of Organization <span className='text-[#FF0000]'>*</span></label>
+                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='organization' placeholder="Enter..."
                       value={formValues.organization}
                       onChange={handleChange} />
                     <pre>{formError.organization}</pre>
                   </div>
 
                   <div>
-                    <label className='text-[12px] font-extrabold pb-[5px]'> Country</label>
-                    <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name="">
+                    <label className='text-[12px] font-extrabold pb-[5px]'> Country <span className='text-[#FF0000]'>*</span></label>
+                    <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name="">
                       <option hidden>Please Select</option>
                       <option>Us</option>
                       <option>Pakistan</option>
@@ -125,8 +126,8 @@ function ContactUs() {
                   </div>
 
                   <div>
-                    <label className='text-[12px] font-extrabold pb-[5px]'> Reason Of Contact </label>
-                    <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name="">
+                    <label className='text-[12px] font-extrabold pb-[5px]'> Reason Of Contact <span className='text-[#FF0000]'>*</span></label>
+                    <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name="">
                       <option hidden>Please Select</option>
                       <option>Brand Protection</option>
                       <option>QR CODE</option>
@@ -137,8 +138,8 @@ function ContactUs() {
                   </div>
 
 
-                  <div className="col-span-2">
-                    <textarea cols="30" rows="8" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full" name='message' placeholder="Type Your Message Here........."
+                  <div className="col-span-2 hov-inp ">
+                    <textarea cols="30" rows="8" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='message' placeholder="Type Your Message Here........."
                       value={formValues.message}
                       onChange={handleChange}>
                     </textarea>
@@ -157,13 +158,13 @@ function ContactUs() {
           </div>
           <div className='w-[35%]'>
             <h1 className='text-[#0F7CC0] text-[45px] font-bold pb-[45px]'>How Can We Help.?</h1>
-            <p className='capitalize text-[25px] font-normal pb-[40px]'>Looking For The Brand Secure QR Code Website.? We verisys.us Is Always Here To Help You.</p>
+            <p className='capitalize text-[25px] font-normal pb-[40px]'>Looking For The Brand Secure QR Code Website.? We <Link className='text-[#0F7CC0]' href="/">Verisys.us</Link> Is Always Here To Help You.</p>
             <p className='capitalize text-[25px] text-[#0F7CC0] font-semibold'>Fill the form and let us know how can we help.?</p>
           </div>
         </div>
       </div>
 
-      <div>
+      <div className='mt-[70px]'>
         <div className="bg-[url('/images/BgCode.png')] bg-cover pt-[55px] pb-[55px] ">
           <div className='container'>
           <h1 className='text-center text-[35px] text-[#FFFFFF] font-bold mt-[45px] mb-[55px]  trustres'>OTHER OPTIONS</h1>
