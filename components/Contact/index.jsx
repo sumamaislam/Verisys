@@ -61,22 +61,22 @@ function ContactUs() {
   return (
     <div>
       <div className='adjust_padding relative '>
-        <div className='changed_it'>
+        <div className='md:ml-[5%]'>
           <div className='flex justify-between'>
-            <div className='flex flex-col justify-center items-start w-[40%] contactparares '>
-              <h1 className='text-[50px] font-bold text-[#0F7CC0] pb-[30px] md:text-center contactres'>Contact Us</h1>
-              <p className='capitalize text-[22px] font-normal pb-[30px] contactpara'>Want to get in touch with our Customer Service team? Looking to learn more about our solutions? Have a press inquiry?</p>
+            <div className='flex flex-col justify-center md:items-start md:w-[100%] contactparares '>
+              <h1 className='text-[30px] mt-8 lg:text-[40px] font-bold text-[#0F7CC0] pb-[30px] md:text-center contactres'>Contact Us</h1>
+              <p className='capitalize text-[22px] font-normal pb-[30px] contactparaa'>Want to get in touch with our Customer Service team? Looking to learn more about our solutions? Have a press inquiry?</p>
               <p className='capitalize text-[22px] font-normal contactpara'>Speak to a member of our team by using the form below, or give us a call.</p>
             </div>
             <div className='contactbannerrr'>
-              <img className='' src="/images/contactbanner.png" alt="" />
+              <img className='max-w-[550px]' src="/images/contactbanner.png" alt="" />
             </div>
           </div>
         </div>
       </div>
 
       <div className='containers' >
-        <div className='flex justify-between gap-[70px] items-center formhelp'>
+        <div className='flex justify-between mt-[70px] gap-[70px] items-center formhelp'>
           <div className='bg-[#D8F3FE] rounded-[10px] w-[65%] hov-inpp formcontent'>
             <form onSubmit={handleSubmit} >
               <div className="py-10 px-5">
@@ -152,7 +152,7 @@ function ContactUs() {
                   </div>
 
                   <div className="col-span-2 flex m-auto">
-                    <button className="text-[25px] p-[8px] bg-[#0F7CC0] brandformbutton text-white font-bold py-[12px] px-[62px] rounded-[10px]">
+                    <button className="text-[25px] p-[8px] bg-[#0F7CC0] brandformbutton text-white font-bold py-[12px] px-[62px] rounded-[10px] submitbtn">
                       Submit
                     </button>
                   </div>
@@ -162,9 +162,9 @@ function ContactUs() {
             </form>
           </div>
           <div className='w-[35%] helpcontent'>
-            <h1 className='text-[#0F7CC0] text-[45px] font-bold pb-[45px] helphead'>How Can We Help.?</h1>
-            <p className='capitalize text-[25px] font-normal pb-[40px]'>Looking For The Brand Secure QR Code Website.? We <Link className='text-[#0F7CC0]' href="/">Verisys.us</Link> Is Always Here To Help You.</p>
-            <p className='capitalize text-[25px] text-[#0F7CC0] font-semibold'>Fill the form and let us know how can we help.?</p>
+            <h1 className='text-[#0F7CC0] text-[45px] font-bold pb-[45px] helphead formheadres'>How Can We Help.?</h1>
+            <p className='capitalize text-[25px] font-normal pb-[40px] formparagraph'>Looking For The Brand Secure QR Code Website.? We <Link className='text-[#0F7CC0]' href="/">Verisys.us</Link> Is Always Here To Help You.</p>
+            <p className='capitalize text-[25px] text-[#0F7CC0] font-semibold formparagraph'>Fill the form and let us know how can we help.?</p>
           </div>
         </div>
       </div>

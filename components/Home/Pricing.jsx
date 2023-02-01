@@ -59,7 +59,7 @@ function Pricing() {
                         </div>
                         <div onClick={() => setSelectBox("two")} className={`bg-[#FFFFFF] mt-[25px] pt-6 px-[20px] relative  border-[1px]  rounded-[10px] cursor-pointer borderRound ${selectBox === "two" ? "change_color" : ""}`}>
 
-                                <button onClick={() => setSelectBox("two")} className={` ${selectBox === "two" ? "selected_sale" : ""} text-[#FFFFFF] p-[8px] absolute right-0 top-0 font-bold bestoff`}>BEST OFFER</button>
+                                <button onClick={() => setSelectBox("two")} className={` ${selectBox === "two" ? "selected_sale" : ""} text-[#FFFFFF] p-[6px] text-[14px] absolute right-0 top-0 font-bold bestoff`}>BEST OFFER</button>
 
                             <p className='text-[#3C9E48] text-[35px] font-bold text-center basic'>Standard</p>
 

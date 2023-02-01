@@ -102,7 +102,7 @@ const validate = (values) => {
             </div>
           </div>
 
-          <div className=' mt-[70px]'>
+          {/* <div className=' mt-[70px]'>
             <div className='containers relative'>
               <div className='w-[85%] flex formreswidth'>
                 <div className='bg-[url("/images/samplebg.png")] '>
@@ -164,11 +164,11 @@ const validate = (values) => {
                   </div>
                 </div>
                 <div>
-                  <img className='square absolute right-[0px] h-[350px] mt-[214px]' src="/images/square.png" alt="" />
+                  <img className='square absolute right-[0px] h-[300px] mt-[214px]' src="/images/square.png" alt="" />
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
         <Footer />
