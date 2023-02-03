@@ -25,7 +25,7 @@ function Footer() {
                     <div>
                       <h1 className='text-[#3C9E48] font-bold text-[20px]'>Quick Links</h1>
                     </div>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col links_center'>
                       <Link className='font-semibold text-[16px] pt-6 quickhov w-fit m-auto md:m-0' href='/'>About QR code</Link>
                       <Link className='font-semibold text-[16px] pt-2 quickhov w-fit m-auto md:m-0' href='/'>Homepage</Link>
                       <Link className='font-semibold text-[16px] pt-2 quickhov w-fit m-auto md:m-0' href='/'>Pricing</Link>
@@ -35,7 +35,7 @@ function Footer() {
                     <div>
                       <h1 className='text-[#3C9E48] font-bold text-[20px]'>Company</h1>
                     </div>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col links_center'>
                       <Link className='font-semibold text-[16px] pt-6 quickhov w-fit m-auto md:m-0' href='/'>Our Team</Link>
                       <Link className='font-semibold text-[16px] pt-2 quickhov w-fit m-auto md:m-0' href='/'>Events</Link>
                       <Link className='font-semibold text-[16px] pt-2 quickhov w-fit m-auto md:m-0' href='/'>Career</Link>
@@ -57,7 +57,7 @@ function Footer() {
                     <div>
                       <h1 className='text-[#3C9E48] font-bold text-[20px]'>News</h1>
                     </div>
-                    <div className='flex flex-col'>
+                    <div className='flex flex-col links_center'>
                       <Link className='font-semibold w-fit m-auto md:m-0 text-[16px] pt-6 quickhov' href='/'>Our Team</Link>
                       <Link className='font-semibold  w-fit m-auto md:m-0  text-[16px] pt-2 quickhov' href='/'>Events</Link>
                       <Link className='font-semibold  w-fit m-auto md:m-0  text-[16px] pt-2 quickhov' href='/'>Career</Link>

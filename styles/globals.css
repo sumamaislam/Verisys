@@ -686,6 +686,12 @@ textarea:hover {
   }
 }
 
+@media screen and (min-width: 766px) and (max-width:768px) {
+    .links_center{
+        align-items: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .veridata{
         text-align: center;
