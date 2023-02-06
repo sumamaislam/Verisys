@@ -24,7 +24,7 @@ export default function Home() {
         <Banner />
         <Code />
         <Authentication />
-        <Pricing />
+        {/* <Pricing /> */}
         <Product />
         <Feature />
         <Footer />
