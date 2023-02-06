@@ -814,8 +814,11 @@ textarea:hover {
 }
 
 
-@media screen and (max-width:575PX) {
-    .ordered li {
-        margin: auto;
+/* @media screen and (max-width:575PX) {
+    .adjust_header ul {
+        text-align: center
     }
-}
+    .adjust_header .new_btn{
+        text-align: center;
+    }
+} */
