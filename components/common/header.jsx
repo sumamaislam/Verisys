@@ -73,10 +73,10 @@ function Header() {
                 </li>
                 <li className="font-medium text-[12px] text-[#1FA5DE]">
                   {/* <Link href="#">Use Cases </Link> */}
-                  <button id="dropdownHelperButton" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} data-dropdown-toggle="dropdownHelper" className="font-medium text-[14px] py-2.5 text-center inline-flex items-center " type="button">Use Cases </button>
+                  <button id="dropdownHelperButton" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} data-dropdown-toggle="dropdownHelper" className="font-medium text-[14px] text-center inline-flex items-center " type="button">Use Cases </button>
                   <div id="dropdownHelper" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} className={`z-10 absolute  bg-[#F5FBFF] rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600 ${show ? "" : "hidden"}`}>
                     <ul className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperButton">
-                      <li className='cursor-pointer borderhover'>
+                      <li className='cursor-pointer borderhover mt-[0px]'>
                         <Link href="/brand"><div className="flex  items-center p-2 rounded  cursor-pointer">
                           <div className='w-[27px]'>
                             <img src="/images/brand.png" alt="" />
@@ -91,7 +91,7 @@ function Header() {
                         </div></Link>
                         {/* <hr className='drophover' /> */}
                       </li>
-                      <li className='cursor-pointer borderhover'>
+                      <li className='cursor-pointer borderhover mt-[0px]'>
                         <Link href="/label"><div className="flex items-center p-2 rounded   cursor-pointer">
                           <div className='w-[27px]'>
                             <img src="/images/key.png" alt="" />
@@ -106,7 +106,7 @@ function Header() {
                         </div></Link>
                         {/* <hr className='drophover' /> */}
                       </li>
-                      <li className='cursor-pointer'>
+                      <li className='cursor-pointer mt-[0px]'>
                         <Link href="/license"><div className="flex items-center p-2 rounded  cursor-pointer">
                           <div className='w-[33px]'>
                             <img src="/images/license.png" alt="" />
@@ -130,7 +130,7 @@ function Header() {
                   <Link href="#">Join Our Team</Link>
                 </li> */}
               </ul>
-              <div className='new_btn'><Link href='/contact'> <button className='text-[12px] mt-[20px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button></Link></div>
+              <div className='new_btn'><Link href='/contact'> <button className='text-[12px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button></Link></div>
             </div>
           </div>
         </div>
