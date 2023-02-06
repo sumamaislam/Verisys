@@ -26,7 +26,7 @@ function Header() {
             </Link>
             <div className="md:hidden">
               <button
-                className="p-2  rounded-md outline-none focus:border-gray-400 focus:border"
+                className="p-2  rounded-md outline-none "
                 onClick={() => setNavbar(!navbar)}
               >
                 {navbar ? (
