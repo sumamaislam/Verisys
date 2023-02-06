@@ -97,9 +97,9 @@ function Footer() {
       </div>
       <div className='bg-[#0F7CC0] flex m-auto'>
         <div className='items-center p-[7px] text-center flex gap-4 m-auto'>
-        {/* <div> */}
+     
           <img src="/images/copyright.png" alt="" />
-        {/* </div> */}
+      
         <h1 className='text-[#FFFFFF]'>Copyright 2023 verisys.us  Private Limited. All rights Reserved</h1>
       </div>
       </div>
