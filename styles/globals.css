@@ -738,15 +738,24 @@ textarea:hover {
   }
 }
 
-/* @media screen and (min-width: 1024px) and (max-width: 1560px) {
+@media screen and (min-width: 1024px) and (max-width: 1533px) {
    .width_adjust{
-    width: 45%;
+    width: 43% !important;
    }
-  } */
+  }
+@media screen and (min-width: 1534px) and (max-width: 2400px) {
+   .width_adjust{
+    width: 30% !important;
+   }
+  }
 
 @media screen and (min-width: 1370px) and (max-width: 2400px) {
    .width_set{
     margin: 0 auto;
     width: 67%;
    }
-  }
+   .stop_counter_set{
+    width: 27% !important;
+}
+
+}

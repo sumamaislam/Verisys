@@ -63,8 +63,8 @@ function ContactUs() {
       <div className='adjust_padding relative '>
         <div className='md:ml-[5%]'>
           <div className='flex justify-between'>
-            <div className='flex flex-col justify-center md:items-start md:w-[100%] contactparares'>
-              <h1 className='text-[30px] mt-8 lg:text-[40px] font-bold text-[#0F7CC0] pb-[30px] md:text-center contactres'>Contact Us</h1>
+            <div className='flex flex-col justify-center md:items-start md:w-[100%] contactparares width_adjust'>
+              <h1 className='text-[30px] mt-8 lg:text-[40px] font-bold text-[#0F7CC0] pb-[30px] md:text-center contactres '>Contact Us</h1>
               <p className='capitalize text-[22px] font-normal pb-[30px] contactparaa'>Want to get in touch with our Customer Service team? Looking to learn more about our solutions? Have a press inquiry?</p>
               <p className='capitalize text-[22px] font-normal contactpara'>Speak to a member of our team by using the form below, or give us a call.</p>
             </div>
