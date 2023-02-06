@@ -147,7 +147,7 @@ function ContactUs() {
                   </div>
 
                   <div className="col-span-2 flex items-center">
-                    <input type="checkbox" />
+                    <input className='cursor-pointer' type="checkbox" />
                     <label className='ml-2'>I agree with the Verisys's <a className='text-blue-600 dark:text-blue-500 hover:underline' href="#">Privacy Policy</a> and <a className='text-blue-600 dark:text-blue-500 hover:underline' href='#'>Terms Of Services</a></label>
                   </div>
 
