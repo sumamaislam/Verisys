@@ -74,7 +74,7 @@ function Header() {
                 <li className="font-medium text-[12px] text-[#1FA5DE]">
                   {/* <Link href="#">Use Cases </Link> */}
                   <button id="dropdownHelperButton" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} data-dropdown-toggle="dropdownHelper" className="font-medium text-[14px] text-center inline-flex items-center " type="button">Use Cases </button>
-                  <div id="dropdownHelper" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} className={`z-10 absolute  bg-[#F5FBFF] rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600 ${show ? "" : "hidden"}`}>
+                  <div id="dropdownHelper" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} className={`z-10 absolute adjust_small  bg-[#F5FBFF] rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600 ${show ? "" : "hidden"}`}>
                     <ul className="p-3 space-y-1 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHelperButton">
                       <li className='cursor-pointer borderhover mt-[0px]'>
                         <Link href="/brand"><div className="flex  items-center p-2 rounded  cursor-pointer">

@@ -811,10 +811,14 @@ textarea:hover {
         padding-left: 6%;
         padding-bottom: 20px;
     }
+    .adjust_small {
+        position: initial !important;
+        background-color: #E0F3FF;
+    }
 }
 
 
-@media screen and (max-width:575PX) {
+@media screen and (max-width:575px) {
     .ordered li {
         margin: auto;
     }
