@@ -319,6 +319,10 @@ body {
     color: #3C9E48;
 }
 
+.numeffect:hover{
+    color: #3C9E48;
+}
+
 .arrowhide {
     -webkit-appearance: none;
     appearance: none;
