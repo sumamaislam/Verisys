@@ -108,6 +108,7 @@ body {
         display: flex;
         justify-content: center;
     }
+
     .btnQrRes {
         width: 200px;
         padding: 15px;
@@ -196,7 +197,7 @@ body {
 
     }
 
-    .bestoff{
+    .bestoff {
         padding: 6px;
         font-size: 13px;
     }
@@ -291,7 +292,7 @@ body {
         margin-left: 0;
     }
 
-  
+
 }
 
 /* ############################# Hover effects ################################ */
@@ -319,7 +320,7 @@ body {
     color: #3C9E48;
 }
 
-.numeffect:hover{
+.numeffect:hover {
     color: #3C9E48;
 }
 
@@ -645,11 +646,12 @@ textarea:hover {
         justify-content: center;
     }
 
-    .formheadres{
+    .formheadres {
         font-size: 30px;
         text-align: center;
     }
-    .formparagraph{
+
+    .formparagraph {
         font-size: 20px;
         text-align: center;
     }
@@ -657,104 +659,151 @@ textarea:hover {
 }
 
 @media screen and (min-width: 765px) and (max-width: 768px) {
-    .contactres{
+    .contactres {
         text-align: center;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 575px) {
-  .formparagraph{
-    font-size: 15px;
-    text-align: center;
-  }
-  .formheadres{
-    font-size: 30px;
-    text-align: center;
-  }
+    .formparagraph {
+        font-size: 15px;
+        text-align: center;
+    }
 
-  .contactpara{
-    font-size: 15px;
-    text-align: center;
-    padding: 0 15px;
-  }
-  .contactparaa{
-    font-size: 15px;
-    text-align: center;
-    padding: 0 15px;
-    padding-bottom: 20px;
-  }
-  .submitbtn{
-    font-size: 15px;
-    padding: 10px 45px;
-  }
+    .formheadres {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .contactpara {
+        font-size: 15px;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .contactparaa {
+        font-size: 15px;
+        text-align: center;
+        padding: 0 15px;
+        padding-bottom: 20px;
+    }
+
+    .submitbtn {
+        font-size: 15px;
+        padding: 10px 45px;
+    }
 }
 
 @media screen and (min-width: 766px) and (max-width:768px) {
-    .links_center{
+    .links_center {
         align-items: center;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .veridata{
+    .veridata {
         text-align: center;
     }
-    .company{
+
+    .company {
         text-align: center;
     }
-    .links{
+
+    .links {
         text-align: center;
     }
-    .location{
+
+    .location {
         text-align: center;
     }
-    .new{
+
+    .new {
         text-align: center;
     }
-    .contact{
+
+    .contact {
         text-align: center;
     }
-    .veridataimg{
+
+    .veridataimg {
         display: flex;
         justify-content: center;
     }
-    .logos{
+
+    .logos {
         display: flex;
-        justify-content: center; 
+        justify-content: center;
     }
 }
 
 
 @media screen and (max-width: 1240px) {
-    .square{
+    .square {
         display: none;
     }
 }
 
 @media screen and (max-width: 1239px) {
-  .formreswidth{
-    width: 100%;
-  }
+    .formreswidth {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1533px) {
-   .width_adjust{
-    width: 43% !important;
-   }
-  }
+    .width_adjust {
+        width: 43% !important;
+    }
+}
+
 @media screen and (min-width: 1534px) and (max-width: 2400px) {
-   .width_adjust{
-    width: 30% !important;
-   }
-  }
+    .width_adjust {
+        width: 30% !important;
+    }
+}
 
 @media screen and (min-width: 1370px) and (max-width: 2400px) {
-   .width_set{
-    margin: 0 auto;
-    width: 67%;
-   }
-   .stop_counter_set{
-    width: 27% !important;
+    .width_set {
+        margin: 0 auto;
+        width: 67%;
+    }
+
+    .stop_counter_set {
+        width: 27% !important;
+    }
 }
+
+
+/* Navbar */
+
+@media screen and (max-width:768px) {
+    .adjust_header {
+        position: fixed;
+        /* top: 50px; */
+        background-color: #E0F3FF;
+        width: 100%;
+        left: 0;
+        /* padding-left: 6%; */
+        transition: top 0.7s;
+        height: 22vh;
+        /* top: calc(22vh - 50px); */
+        top: -21vh;
+        z-index: -3;
+    }
+
+    .ordered {
+        padding-top: 16px;
+        padding-left: 6%;
+    }
+
+    .adjust_hamber {
+        transition: top 0.7s;
+        top: 50px;
+    }
+
+    .adjust_header .new_btn {
+        background-color: #E0F3FF;
+        padding-left: 6%;
+        padding-bottom: 20px;
+    }
 }

@@ -19,7 +19,7 @@ function Header() {
   return (
     <nav className="w-full fixed bg-[#E0F3FF] bg-cover bg-no-repeat  z-10">
       <div className="justify-between md:items-center md:flex containers" >
-        <div>
+        <div className='bg-[#E0F3FF]'>
           <div className="flex items-center justify-between py-[15px] md:block">
             <Link href="/">
               <img src="/images/Verisyslogo.png" className="w-[60px]" alt="logo" />
@@ -64,12 +64,11 @@ function Header() {
         </div>
         <div>
           <div
-            className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
-              }`}
+            className={`flex-1 justify-self-center md:block md:pb-0 md:mt-0 `}
           >
-            <div className=' gap-10 md:flex'>
-              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-                <li className="font-medium text-[14px] text-[#1FA5DE]">
+            <div className={`gap-10 md:flex adjust_header adjust_header ${navbar ? "adjust_hamber" : ""}`}>
+              <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ordered">
+                <li className="font-medium text-[14px] pt-[30px] md:pt-[0px] text-[#1FA5DE]">
                   <Link href="/technology">Technology</Link>
                 </li>
                 <li className="font-medium text-[12px] text-[#1FA5DE]">
@@ -131,7 +130,7 @@ function Header() {
                   <Link href="#">Join Our Team</Link>
                 </li> */}
               </ul>
-              <Link href='/contact'> <button className='text-[12px] mt-[20px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button></Link>
+              <div className='new_btn'><Link href='/contact'> <button className='text-[12px] mt-[20px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button></Link></div>
             </div>
           </div>
         </div>
