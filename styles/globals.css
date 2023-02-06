@@ -733,3 +733,9 @@ textarea:hover {
     width: 100%;
   }
 }
+
+/* @media screen and (min-width: 1024px) and (max-width: 1560px) {
+   .width_adjust{
+    width: 45%;
+   }
+  } */
