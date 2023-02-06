@@ -24,7 +24,7 @@ function Topbtn() {
     <div>
       {show && (
         <div
-          className="fixed md:bottom-[100px] bottom-[30px] right-[10px] md:right-[50px] hover:scale-125 duration-500 ease-in-out cursor-pointer md:p-[20px] p-[10px] font-bold rounded-[100%] bg-[#0F7CC0] text-[#FFFFFF]"
+          className="fixed md:bottom-[100px] bottom-[30px] right-[10px] md:right-[50px] hover:scale-110 duration-500 ease-in-out cursor-pointer md:p-[20px] p-[10px] font-bold rounded-[100%] bg-[#0F7CC0] text-[#FFFFFF]"
           onClick={handleClick}
         >
           <svg
@@ -33,7 +33,7 @@ function Topbtn() {
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="w-4 h-4"
           >
             <path
               stroke-linecap="round"
