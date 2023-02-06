@@ -812,3 +812,10 @@ textarea:hover {
         padding-bottom: 20px;
     }
 }
+
+
+@media screen and (max-width:575PX) {
+    .ordered li {
+        margin: auto;
+    }
+}
