@@ -152,7 +152,7 @@ function ContactUs() {
                   </div>
 
                   <div className="col-span-2 flex m-auto">
-                    <button className="text-[25px] p-[8px] bg-[#0F7CC0] brandformbutton text-white font-bold py-[12px] px-[62px] rounded-[10px] submitbtn">
+                    <button className="text-[20px] p-[8px] bg-[#0F7CC0] brandformbutton text-white font-bold py-[12px] px-[62px] rounded-[10px] submitbtn">
                       Submit
                     </button>
                   </div>
