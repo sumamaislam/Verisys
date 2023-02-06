@@ -175,35 +175,47 @@ function ContactUs() {
             <h1 className='text-center text-[35px] text-[#FFFFFF] font-bold mt-[45px] mb-[55px]  trustres'>OTHER OPTIONS</h1>
             <div className='grid gap-[25px] mt-[40px] lg:grid-cols-4 px-14 md:grid-cols-2 grid-cols-1'>
               <div>
-                <div>
-                  <img className='flex justify-center m-auto' src="/images/skypecont.png" alt="" />
-                </div>
+                <a target="_blank" className='w-fit m-auto' href='https://www.skype.com/en/'>
+                  <div>
+                    <img className='flex justify-center m-auto' src="/images/skypecont.png" alt="" />
+                  </div>
+                </a>
                 <p className='text-[25px] font-bold text-center pt-[30px] text-[#FFFFFF]'>Skype</p>
-                <p className='text-center text-[15px] pt-3 font-semibold'>verisys.int</p>
+                <a target="_blank" className='w-fit m-auto' href='https://www.skype.com/en/'><p className='text-center text-[15px] pt-3 font-semibold w-fit m-auto'>verisys.int</p></a>
               </div>
 
               <div>
-                <div>
+                <a target="_blank" className='w-fit m-auto' href='https://twitter.com/'><div>
                   <img className='flex justify-center m-auto' src="/images/twittercont.png" alt="" />
                 </div>
+                </a>
                 <p className='text-[25px] font-bold text-center pt-[30px] text-[#FFFFFF]'>Twitter</p>
-                <p className='text-center text-[15px] pt-3 font-semibold'>verisysis.int</p>
+                <a target="_blank" className='w-fit m-auto' href='https://twitter.com/'><p className='text-center text-[15px] pt-3 font-semibold w-fit m-auto'>verisysis.int</p></a>
               </div>
 
               <div>
-                <div>
-                  <img className='flex justify-center m-auto' src="/images/phonecont.png" alt="" />
-                </div>
+                <a className='w-fit m-auto' href='tel: +923260533337'>
+                  <div>
+                    <img className='flex justify-center m-auto' src="/images/phonecont.png" alt="" />
+                  </div>
+                </a>
+
                 <p className='text-[25px] font-bold text-center pt-[30px] text-[#FFFFFF]'>Phone</p>
-                <p className='text-center text-[15px] pt-3 font-semibold'>+1 234 456 2919</p>
+                <a className='w-fit m-auto' href='tel: +923260533337'>
+                  <p className='text-center text-[15px] pt-3 font-semibold w-fit m-auto'>+1 234 456 2919</p>
+                </a>
               </div>
 
               <div>
-                <div>
-                  <img className='flex justify-center m-auto' src="/images/mailcont.png" alt="" />
-                </div>
+                <a className='w-fit m-auto' href='mailto: contact@verisys.com'>
+                  <div>
+                    <img className='flex justify-center m-auto' src="/images/mailcont.png" alt="" />
+                  </div>
+                </a>
                 <p className='text-[25px] font-bold text-center pt-[30px] text-[#FFFFFF]'>Mail</p>
-                <p className='text-center text-[15px] pt-3 font-semibold'>contact@verisys.com</p>
+                <a className='w-fit m-auto' href='mailto: contact@verisys.com'>
+                  <p className='text-center text-[15px] pt-3 font-semibold w-fit m-auto'>contact@verisys.com</p>
+                </a>
               </div>
 
             </div>
