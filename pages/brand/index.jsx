@@ -76,7 +76,7 @@ const validate = (values) => {
           <div className='containers'>
             <h1 className='text-[35px] font-bold text-[#0F7CC0] adjust_padding text-center brandprotection'>Brand Protection</h1>
             <div className='mt-[20px]'>
-              <img className='w-[940px] flex m-auto' src="/images/brandpage.png" alt="" />
+              <img className='w-[740px] flex m-auto' src="/images/brandpage.png" alt="" />
             </div>
             <p className='mt-[55px] text-[20px] text-justify font-normal capitalize brandparres'>Verisys provides anti-counterfeiting authentication technology solutions designed to protect your investment in product innovation, brand value and reputation. At the same time our solutions can create new opportunities to increase trust and engagement with consumers around the world. Our unique Holographic Fingerprint anti-counterfeit label, Check If Real mobile authentication App, and real-time data and analytics capabilities, protect physical assets from counterfeit goods. Brand and product owners receive fraud alerts if there is any potentially fraudulent activity. This groundbreaking brand protection technology from Authentic Vision enables our customers to minimize lost revenues and mitigate liability from counterfeiting activities.</p>
             <div className='mt-[70px]'>
@@ -88,14 +88,14 @@ const validate = (values) => {
               <div className='flex items-center justify-around protectbuild'>
 
                 <div>
-                  <h1 className='text-[35px] font-bold pt-[50px] pb-[29px] headingprotect'>Protect And Build Your Brand With Us</h1>
-                  <div className='pb-[48px] btnnofprotect'>
+                  <h1 className='text-[33px] font-bold py-[98px] headingprotect'>Protect And Build Your Brand With Us</h1>
+                  {/* <div className='pb-[48px] btnnofprotect'>
                     <button className='bg-[#0F7CC0] text-[#FFFFFF] brandformbutton text-[25px] px-[35px] py-[12px] rounded-[10px] protectbtn'>BUILD YOUR QR CODE</button>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div>
-                  <img className='w-[446px] verisyss' src="/images/verisystext.png" alt="" />
+                  <img className='w-[440px] verisyss' src="/images/verisystext.png" alt="" />
                 </div>
 
               </div>

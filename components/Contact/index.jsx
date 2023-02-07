@@ -9,6 +9,8 @@ function ContactUs() {
     email: "",
     organization: "",
     message: "",
+    country: "",
+    contact: "",
   }
 
   const [formValues, setFormValues] = useState(fields)
@@ -45,8 +47,14 @@ function ContactUs() {
     if (!values.organization) {
       errors.organization = "Organization Name is required"
     }
+    if (!values.country) {
+      errors.country = "Country is required"
+    }
+    if (!values.contact) {
+      errors.contact = "Contact reason is required"
+    }
     if (!values.message) {
-      errors.message = "Message Name is required"
+      errors.message = "Message is required"
     }
     if (Object.keys(errors).length > 0) {
       setFormError(errors)
@@ -84,50 +92,55 @@ function ContactUs() {
                 <div className="grid grid-cols-2 gap-4">
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[14px] font-bold mb-[7px]'> First Name <span className='text-[#FF0000]'>*</span></label>
+                    <label className='text-[14px] font-bold mb-[7px] form_font_sizing'> First Name <span className='text-[#FF0000]'>*</span></label>
                     <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='firstname' placeholder="Enter..."
                       value={formValues.firstname}
                       onChange={handleChange} />
-                    <pre>{formError.firstname}</pre>
+                    <pre className='text-[#FF0000] text-[10px] pt-1'>{formError.firstname}</pre>
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[14px] font-bold mb-[7px]'> Last Name <span className='text-[#FF0000]'>*</span></label>
+                    <label className='text-[14px] font-bold mb-[7px] form_font_sizing'> Last Name <span className='text-[#FF0000]'>*</span></label>
                     <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='lastname' placeholder="Enter..."
                       value={formValues.lastname}
                       onChange={handleChange} />
-                    <pre>{formError.lastname}</pre>
+                    <pre className='text-[#FF0000] text-[10px] pt-1'>{formError.lastname}</pre>
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[14px] font-bold mb-[7px]'> E-Mail <span className='text-[#FF0000]'>*</span></label>
-                    <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='email' placeholder="Enter..."
+                    <label className='text-[14px] font-bold mb-[7px] form_font_sizing'> E-Mail <span className='text-[#FF0000]'>*</span></label>
+                    <input type="email" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='email' placeholder="Enter..."
                       value={formValues.email}
                       onChange={handleChange} />
-                    <pre>{formError.email}</pre>
+                    <pre className='text-[#FF0000] text-[10px] pt-1'>{formError.email}</pre>
                   </div>
 
                   <div className="col-span-2 lg:col-span-1">
-                    <label className='text-[14px] font-bold mb-[7px]'>Name Of Organization <span className='text-[#FF0000]'>*</span></label>
+                    <label className='text-[14px] font-bold mb-[7px] form_font_sizing'>Name Of Organization <span className='text-[#FF0000]'>*</span></label>
                     <input type="text" className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name='organization' placeholder="Enter..."
                       value={formValues.organization}
                       onChange={handleChange} />
-                    <pre>{formError.organization}</pre>
+                    <pre className='text-[#FF0000] text-[10px] pt-1'>{formError.organization}</pre>
                   </div>
 
                   <div className='col-span-2 lg:col-span-1'>
-                    <label className='text-[14px] font-bold mb-[7px]'> Country <span className='text-[#FF0000]'>*</span></label>
-                    <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name="">
+                    <label className='text-[14px] font-bold mb-[7px] form_font_sizing'> Country <span className='text-[#FF0000]'>*</span></label>
+                    <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name="country"
+                     value={formValues.country}
+                     onChange={handleChange}>
                       <option hidden>Please Select</option>
-                      <option>Us</option>
+                      <option>USA</option>
                       <option>Pakistan</option>
                       <option>America</option>
                     </select>
+                    <pre className='text-[#FF0000] text-[10px] pt-1'>{formError.country}</pre>
                   </div>
 
                   <div className='col-span-2 lg:col-span-1'>
-                    <label className='text-[14px] font-bold mb-[7px]'> Reason Of Contact <span className='text-[#FF0000]'>*</span></label>
-                    <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name="">
+                    <label className='text-[14px] font-bold mb-[7px] form_font_sizing'> Reason Of Contact <span className='text-[#FF0000]'>*</span></label>
+                    <select className="border-solid border-gray-400 border-2 p-3 md:text-xl w-full hov-inp" name="contact"
+                     value={formValues.contact}
+                     onChange={handleChange}>
                       <option hidden>Please Select</option>
                       <option>Brand Protection</option>
                       <option>QR CODE</option>
@@ -135,6 +148,7 @@ function ContactUs() {
                       <option>Partnership</option>
                       <option>Others</option>
                     </select>
+                    <pre className='text-[#FF0000] text-[10px] pt-1'>{formError.contact}</pre>
                   </div>
 
 
@@ -143,12 +157,12 @@ function ContactUs() {
                       value={formValues.message}
                       onChange={handleChange}>
                     </textarea>
-                    <pre>{formError.message}</pre>
+                    <pre className='text-[#FF0000] text-[10px]'>{formError.message}</pre>
                   </div>
 
                   <div className="col-span-2 flex items-center">
                     <input className='cursor-pointer' type="checkbox" />
-                    <label className='ml-2'>I agree with the Verisys's <a className='text-blue-600 dark:text-blue-500 hover:underline' href="#">Privacy Policy</a> and <a className='text-blue-600 dark:text-blue-500 hover:underline' href='#'>Terms Of Services</a></label>
+                    <label className='ml-2 text-[18px] sm:text-[14px]'>I agree with the Verisys's <a className='text-blue-600 dark:text-blue-500 hover:underline' href="#">Privacy Policy</a> and <a className='text-blue-600 dark:text-blue-500 hover:underline' href='#'>Terms Of Services</a></label>
                   </div>
 
                   <div className="col-span-2 flex m-auto">

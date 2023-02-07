@@ -7,6 +7,7 @@ import Pricing from '../components/Home/Pricing'
 import Product from '../components/Home/Product'
 import Feature from '../components/Home/Feature'
 import Market from '../components/Home/Market'
+import AnyContact from '../components/Home/AnyContact'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         {/* <Pricing /> */}
         <Product />
         <Market/>
+        <AnyContact/>
         <Feature />
         <Footer />
       </main>

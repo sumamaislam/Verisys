@@ -432,7 +432,7 @@ body {
     }
 
     .headingprotect {
-        font-size: 20px;
+        font-size: 19px;
         text-align: center;
     }
 
@@ -461,7 +461,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .headingprotect {
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .protectbuild {
@@ -795,11 +795,13 @@ textarea:hover {
         padding-top: 25px;
         padding-left: 6%;
     }
+
     .ordered li {
         margin-top: 0px !important;
         padding-top: 25px;
         /* padding-bottom: 20px; */
     }
+
     .adjust_hamber {
         transition: top 0.7s;
         top: 50px;
@@ -811,23 +813,132 @@ textarea:hover {
         padding-left: 6%;
         padding-bottom: 20px;
     }
+
     .adjust_small {
         position: initial !important;
         background-color: #E0F3FF;
     }
+
+    .button_sizing {
+        font-size: 15px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .buttn_adjust {
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .contact_width {
+        width: 160px;
+    }
+
+    .faq_width {
+        width: 110px;
+    }
+
 }
 
 
-/* @media screen and (max-width:575PX) {
-    .adjust_header ul {
-        text-align: center
+@media screen and (max-width:575PX) {
+    .down_drop_sizing {
+        font-size: 12px;
     }
-    .adjust_header .new_btn{
-        text-align: center;
-    }
-} */
 
-.borderColor{
+    .form_font_sizing {
+        font-size: 12px;
+    }
+
+    .gap_sizing {
+        gap: 35px;
+    }
+
+    .button_sizing {
+        font-size: 13px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        /* padding-left: 60px;
+        padding-right: 60px; */
+
+    }
+
+    .contact_width {
+        width: 150px;
+    }
+
+    .faq_width {
+        width: 100px;
+    }
+
+    .buttn_adjust {
+        /* display: flex;
+        margin: 0 auto; */
+        /* gap: 17px;  */
+    }
+
+    .any_ques {
+        font-size: 20px;
+    }
+
+    .direction_adjust {
+        flex-direction: column;
+    }
+
+    .bg_set{
+        padding-top: 0px !important;
+    }
+}
+
+.borderColor {
     border: 1px solid #1FA5DE;
     border-radius: 10px;
+}
+
+.bg_set {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width: 300px) {
+    .button_sizing {
+        font-size: 11px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+
+    .buttn_adjust {
+        gap: 17px;
+    }
+
+    .contact_width {
+        width: 130px;
+    }
+
+    .faq_width {
+        width: 80px;
+    }
+    .any_ques {
+        font-size: 19px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:769PX) and (max-width:840PX) {
+    .contact_width {
+        width: 280px;
+    }
+
+    .faq_width {
+        width: 160px;
+    }
+
+    .direction_adjust{
+        gap: 55px;
+    }
 }

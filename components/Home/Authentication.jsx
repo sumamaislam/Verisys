@@ -5,7 +5,7 @@ function Authentication() {
         <div>
             <div className='containers'>
                 <div>
-                    <h1 className='text-[35px] font-bold text-[#0F7CC0] text-center mt-14 mobauthres'>Mobile Authentication Solution</h1>
+                    <h1 className='text-[35px] font-bold text-[#0F7CC0] text-center mt-[70px] mobauthres'>Mobile Authentication Solution</h1>
                 </div>
                 <div className='flex justify-between gap-[40px] items-center mt-10 authres'>
                     <div className='w-[2350px] authimgres'>
@@ -17,7 +17,7 @@ function Authentication() {
                 </div>
             </div>
 
-            <hr className='mt-14 hrborder' />
+            {/* <hr className='mt-14 hrborder' /> */}
         </div>
     )
 }
