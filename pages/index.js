@@ -6,6 +6,7 @@ import Authentication from '../components/Home/Authentication'
 import Pricing from '../components/Home/Pricing'
 import Product from '../components/Home/Product'
 import Feature from '../components/Home/Feature'
+import Market from '../components/Home/Market'
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
         <Authentication />
         {/* <Pricing /> */}
         <Product />
+        <Market/>
         <Feature />
         <Footer />
       </main>

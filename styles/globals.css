@@ -826,3 +826,8 @@ textarea:hover {
         text-align: center;
     }
 } */
+
+.borderColor{
+    border: 1px solid #1FA5DE;
+    border-radius: 10px;
+}
