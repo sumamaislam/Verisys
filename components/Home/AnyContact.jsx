@@ -14,10 +14,10 @@ function AnyContact() {
 
                             <div className='gap-[50px] flex buttn_adjust '>
                                 <div>
-                                    <button className='text-[#0071BC] bg-[#ffffff] py-[14px] px-[57px] w-[300px]  text-[25px] font-semibold  contact_width button_sizing'>CONTACT US</button>
+                                    <button className='text-[#0071BC] bg-[#ffffff] py-[14px] px-[57px] w-[300px] rounded-[10px] cursor-pointer text-[25px] font-semibold  contact_width button_sizing'>CONTACT US</button>
                                 </div>
                                 <div>
-                                    <button className='text-[#0071BC] bg-[#ffffff] py-[14px] px-[57px] w-[170px]  text-[25px] font-semibold faq_width button_sizing'>FAQ</button>
+                                    <button className='text-[#0071BC] bg-[#ffffff] py-[14px] px-[57px] w-[170px] rounded-[10px] cursor-pointer text-[25px] font-semibold faq_width button_sizing'>FAQ</button>
                                 </div>
 
                             </div>
