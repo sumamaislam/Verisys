@@ -7,7 +7,7 @@ function Market() {
         <h1 className='text-center text-[35px] text-[#0F7CC0] font-bold mt-[70px]'>Our Markets</h1>
         <div>
 
-          <div className='flex gap-[50px] mt-[70px] flex-wrap m-auto justify-center'>
+          <div className='flex gap-[73px] mt-[70px] flex-wrap m-auto justify-center'>
             <div className='borderColor py-[35px] px-[40px w-[300px]'>
               <div>
                 <img className='flex justify-center m-auto' src="/images/automotive.png" alt="" />
