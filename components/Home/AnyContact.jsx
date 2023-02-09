@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function AnyContact() {
@@ -14,12 +15,11 @@ function AnyContact() {
 
                             <div className='gap-[50px] flex buttn_adjust '>
                                 <div>
-                                    <button className='text-[#0071BC] bg-[#ffffff] py-[14px] px-[57px] w-[300px] rounded-[10px] cursor-pointer text-[25px] font-semibold  contact_width button_sizing'>CONTACT US</button>
+                                <Link href="/contact"> <button className='text-[#0071BC] bg-[#ffffff] py-[14px] px-[57px] w-[300px] rounded-[10px] cursor-pointer text-[25px] font-semibold  contact_width button_sizing'>CONTACT US</button></Link>
                                 </div>
                                 <div>
-                                    <button className='text-[#0071BC] bg-[#ffffff] py-[14px] px-[57px] w-[170px] rounded-[10px] cursor-pointer text-[25px] font-semibold faq_width button_sizing'>FAQ</button>
+                                <Link href="/faq"> <button className='text-[#0071BC] bg-[#ffffff] py-[14px] px-[57px] w-[170px] rounded-[10px] cursor-pointer text-[25px] font-semibold faq_width button_sizing'>FAQ</button></Link>
                                 </div>
-
                             </div>
 
                         </div>

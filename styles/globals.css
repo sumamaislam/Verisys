@@ -942,3 +942,217 @@ textarea:hover {
         gap: 55px;
     }
 }
+
+/* ################################## SEE MORE DETAIL ################################# */
+
+
+@media screen and (max-width:1450px) {
+    .verisyss_res{
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width:1368px) {
+    .verisyss_res{
+        padding-top: 3px;
+    }
+  
+}
+
+@media screen and (min-width: 1370px) and (max-width: 2400px) {
+    .width_sizing {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+.vision_shadow{
+    box-shadow: 0px 6px 7px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1350px) {
+    .vision_adjusting{
+        gap: 0px !important;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .vision_adjusting{
+        gap: 0px !important;
+        flex-direction: column;
+    }
+    .vision_para{
+       justify-content: center;
+        text-align: center;
+        padding-right: 20px ;
+        padding-left: 20px ;
+        margin: 0 auto;
+        padding-bottom: 30px;
+    }
+
+    .vision_img{
+        justify-content: center;
+        display: flex;
+        margin: 0 auto;
+    }
+    .vision2_img{
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .vision_img_res{
+        padding-left: 0px;
+    }
+    .vision2_img_res{
+        padding-left: 0px;
+    }
+
+    .vision_head_res{
+        text-align: center;
+    }
+    .vision2_head_res{
+        text-align: center;
+    }
+    .faq_gap_res{
+        gap: 0px !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .vision2_img{
+        width: 155px;
+    }
+    .vision_img{
+        width: 155px;
+    }
+    .frrquent_res{
+        font-size: 25px;
+    }
+    .faq_res{
+        font-size: 28px;
+    }
+    .faq_gap_res{
+        gap: 0px !important;
+    }
+
+    .vision_find{
+        text-align: center;
+        font-size: 22px;
+    }
+    .vision_head_res{
+        font-size: 23px;
+        padding-bottom: 35px;
+    }
+    .vision2_head_res{
+        font-size: 23px;
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .faq_img_res{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1480px) {
+  .faq_img_res{
+    max-width: 424px;
+  }
+}
+
+@media screen and (min-width: 1782px) {
+    .faq_img_res{
+      max-width: 450px;
+    }
+  }
+
+@media screen and (max-width: 319px) {
+    .vision2_img{
+        width: 110px !important;
+    }
+    .vision_img{
+        width: 110px !important;
+    }
+    .vision_head_res{
+        font-size: 22px;
+        padding-bottom: 35px;
+    }
+    .vision2_head_res{
+        font-size: 22px;
+        padding-bottom: 35px;
+    }
+    .vision_para{
+        font-size: 12px !important;
+    }
+    .vision1_para{
+        font-size: 12px !important;
+    }
+  }
+
+  .veri_contact_bg{
+    background-position-x: center;
+  }
+
+  @media screen and (max-width:2040px) {
+    .verisyss_step{
+        padding-top: 130px;
+    }
+    .verisyss_para{
+        padding-top: 45px;
+    }
+  }
+
+  @media screen and (max-width:1300px) {
+    .verisyss_step{
+        padding-top: 130px;
+    }
+    .verisyss_para{
+        padding-top: 45px;
+    }
+    .veri_contact_bg{
+        background-position-x: 24%;
+    }
+  }
+
+  @media screen and (max-width:1298px) {
+    .veri_contact_bg{
+        /* background-position: center; */
+    }
+  }
+
+
+  @media screen and (max-width:1200px) {
+    .veri_contact_bg{
+        /* background-position-x: 586px; */
+    }
+  }
+  @media screen and (max-width:1032px) {
+    .veri_contact_bg{
+        /* background-position-x: 56px; */
+    }
+    .verisyss_step{
+        width: 100%;
+        text-align: center;
+    }
+    .verisyss_para{
+       text-align: center;
+       width: 100%;
+       padding-bottom: 30px;
+       margin: auto auto;
+      
+    }
+    /* .verisyss_res{
+        padding-top: 150px;
+    } */
+  }
+
+  @media screen and (max-width:1024px) {
+    .veri_contact_bg{
+        background-position-x: 0%;
+    }
+  }
+
+  .active{
+    color: #009245;
+  }

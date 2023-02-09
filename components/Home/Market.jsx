@@ -36,7 +36,7 @@ function Market() {
               <p className='text-[#008BBF] text-[20px] font-bold text-center pt-[30px]'>Brand and technology license </p>
             </div>
 
-            <div className='borderColor py-[35px] px-[40px]  w-[300px] cursor-pointer'>
+            <div className='borderColor py-[35px] px-[40px] w-[300px] cursor-pointer'>
               <div>
                 <img className='flex justify-center m-auto hover:scale-125 duration-500 ease-in-out' src="/images/agro.png" alt="" />
               </div>

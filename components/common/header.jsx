@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Link from "next/link";
 import Modal from '../Contact/modal';
+import { useRouter } from 'next/router';
 
 
 function Header() {
@@ -10,6 +11,7 @@ function Header() {
   const [error, setError] = useState({});
 
   const [show, setShow] = useState(false);
+  const router = useRouter();
 
   const handleModalClick = () => {
     setShowModal(true)
@@ -69,10 +71,18 @@ function Header() {
             <div className={`gap-10 md:flex adjust_header adjust_header ${navbar ? "adjust_hamber" : ""}`}>
               <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ordered">
                 <li className="font-medium text-[14px] pt-[30px] md:pt-[0px] text-[#1FA5DE]">
-                  <Link href="/technology">Technology</Link>
+                  <Link href="/"  className={`${router.pathname === "/" ? "active" : ""}`} >Home</Link>
                 </li>
-                <li className="font-medium text-[12px] text-[#1FA5DE]">
-                  {/* <Link href="#">Use Cases </Link> */}
+
+                <li className="font-medium text-[14px] pt-[30px] md:pt-[0px] text-[#1FA5DE]">
+                  <Link href="/brand"  className={`${router.pathname === "/brand" ? "active" : ""}`}>Brand Protection</Link>
+                </li>
+
+                {/* <li className="font-medium text-[14px] pt-[30px] md:pt-[0px] text-[#1FA5DE]">
+                  <Link href="/"></Link>
+                </li>
+                <li className="font-medium text-[19px] text-[#1FA5DE]">
+                  <Link href="#">Use Cases </Link> 
                   <button id="dropdownHelperButton" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)} data-dropdown-toggle="dropdownHelper" className="font-medium text-[14px] text-center inline-flex items-center " type="button">Use Cases </button>
                   <div className='pt-[14px] mb-[-14px]'  onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
                   <div id="dropdownHelper" className={`z-10 absolute adjust_small bg-[#F5FBFF] rounded-lg shadow w-60 dark:bg-gray-700 dark:divide-gray-600 ${show ? "" : "hidden"}`}>
@@ -90,7 +100,7 @@ function Header() {
                             </label>
                           </div>
                         </div></Link>
-                        {/* <hr className='drophover' /> */}
+                        <hr className='drophover' />
                       </li>
                       <li className='cursor-pointer borderhover mt-[0px]'>
                         <Link href="/label"><div className="flex items-center p-2 rounded   cursor-pointer">
@@ -105,7 +115,7 @@ function Header() {
                             </label>
                           </div>
                         </div></Link>
-                        {/* <hr className='drophover' /> */}
+                        <hr className='drophover' />
                       </li>
                       <li className='cursor-pointer mt-[0px]'>
                         <Link href="/license"><div className="flex items-center p-2 rounded  cursor-pointer">
@@ -124,13 +134,12 @@ function Header() {
                     </ul>
                   </div>
                   </div>
+                </li>   */}
+
+                <li className="font-medium text-[13px] text-[#1FA5DE]">
+                  <Link href="/details" className={`${router.pathname === "/details" ? "active" : ""}`}>VERISYS SECURITY</Link>
                 </li>
-                <li className="font-medium text-[14px] text-[#1FA5DE]">
-                  <Link href="/markets">Markets</Link>
-                </li>
-                {/* <li className="font-medium text-[14px] text-[#1FA5DE]">
-                  <Link href="#">Join Our Team</Link>
-                </li> */}
+            
               </ul>
               <div className='new_btn'><Link href='/contact'> <button className='text-[12px] md:mt-[0px] text-[#FFFFFF] bg-[#1FA5DE] p-[9px] w-[97px] rounded-[10px] italic contactbtn'>Contact Us</button></Link></div>
             </div>

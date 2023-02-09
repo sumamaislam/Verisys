@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 function Product() {
@@ -12,7 +13,7 @@ function Product() {
                             <p className='text-[#3C9E48] text-[40px] font-bold pl-8 proparares'><span className='text-[#0F7CC0] proparares'> VERISYS </span> FROM STEALING</p>
                         </div>
                         <div className='pt-[70px] ml-[180px] pb-[355px] probuttonn'>
-                            <button className='text-[18px] text-[#FFFFFf] bg-[#008BBF] p-[18px] rounded-[10px] probutton italic' style={{ "box-shadow": " 4px 4px 4px rgba(15, 124, 192, 0.25)" }}>SEE MORE DETAIL</button>
+                        <Link href="/details"><button className='text-[18px] text-[#FFFFFf] bg-[#008BBF] p-[18px] rounded-[10px] probutton italic' style={{ "box-shadow": " 4px 4px 4px rgba(15, 124, 192, 0.25)" }}>SEE MORE DETAIL</button></Link>
                         </div>
                     </div>
                 </div>
